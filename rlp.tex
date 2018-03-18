@@ -1,21 +1,27 @@
-\documentclass{book}
+\documentclass{report}
 
 \usepackage[toc,page]{appendix}
+\usepackage[table]{xcolor}
+\usepackage{makecell, multicol, wrapfig, longtable}
+
+
 
 \begin{document}
-	
 	\title{Ragged Lands Pen and Paper System}
 	\author{Nikolaus Trixner}
 		
 	\maketitle
+	
 	\tableofcontents
 
 \part{Introduction}
 	\input{./introduction/pandp.tex}
 	\input{./introduction/setting.tex}
+\newpage
 
 \part{Basic Rules}
 	\input{./basicRules/baseMechanic.tex}
+\newpage
 
 \part{Character Creation}
 	\input{./charCreation/process.tex}
@@ -23,17 +29,20 @@
 	\input{./perks/backgrounds.tex}
 	\input{./perks/zodiacs.tex}
 	\input{./charCreation/startEquipment.tex}
+\newpage
 
 \part{Playing the Game}
 	\input{./game/structure.tex}
 	\input{./game/adventuring.tex}
 	\input{./game/combat.tex}
 	\input{./game/social.tex}
+\newpage
 
 \part{Items and Equipment}
 	\input{./items/armorWeapons.tex}
 	\input{./items/itemsAndGoods.tex}
 	\input{./items/crafting.tex}
+\newpage
 
 \part{Perks}
 	\input{./perks/basePerks.tex}
@@ -42,17 +51,18 @@
 	\input{./perks/divine.tex}
 	\input{./perks/crafting.tex}
 	\input{./perks/skills.tex}
+\newpage
 
 \part{NPCs and Monsters}
 	\input{./npcs/overview.tex}
+\newpage
 
 \part{Appendices}
 \begin{appendices}
-
 	\input{./appendices/damage}
 	\input{./appendices/conditions}
 	\input{./appendices/biomes}
+\newpage
 
 \end{appendices}
-
 \end{document}

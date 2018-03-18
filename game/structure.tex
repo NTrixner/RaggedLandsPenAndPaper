@@ -1,1 +1,59 @@
 \chapter{Adventure Structure}
+Basically, every adventure is a series of encounters. However, most adventures also have a finer structure. The encounters of an adventure are oftentimes combined into Acts. For example, a group might get the quest to fight a group of goblins that regularly attack a small village. Gathering information about the goblins might be one Act of the adventure. Finding their lair could be a second one. The lair itself would then be the third, and resolving the adventure could be a fourth Act.
+Adventures themselves are sometimes combined into Arcs - Plot lines that are larger than one adventure, but still fit into one narrative point. A campaign would then be a combination of several Arcs. You could say that Arcs are to campaigns what Acts are to Adventures.
+Of course, a group doesn't have to follow a campaign structure. Some groups follow a more episodic approach to adventuring. For these, the Adventurer's Guild may be a good idea, especially if the GM wants to play a character too from time to time and if the other players are also good at GMing. But basically, every time you play RLP, you resolve a series of Encounters.
+
+\section{Encounters}
+An encounter is a situation in which the desires and targets of the group are in direct contrast to the current situation. Basically, an encounter can be defined as a combination of these three things: A problem, obstacles, and decisions the players are faced with.
+The problem is the target of the group. What do they want to accomplish during this encounter? It could be "Don't be killed by the goblins", "get rid of the goblins", "find who the murderer is", "get through this cave", "find information about the dragon's lair", you get the idea.
+Obstacles could be all types of things. Enemies, other Characters with different plans than the group, natural obstacles, artificial obstacles, or even conflict inside the group.
+Decisions are an important part of encounters. A game where everything is clear and no deviation is possible becomes boring. 
+How the players face such an encounter is up to them, and the RLP differentiates between three ways characters can interact with encounters the so-called "Game Modes".
+
+\section{Combat, Adventuring and Social.}
+
+\textbf{Combat} is self-explanatory. Whenever an encounter is solved by attacking someone and directly harming them, it should be considered combat. When a trap is laid, or the characters try to defeat enemies by pushing a boulder onto them, it is adventuring instead.
+
+\textbf{Adventuring} is the sum amount of exploration, navigation, survival and crafting. Whenever characters try to sneak by enemies, find their way around a massive ravine or create a distraction for a group of enemies, they're engaged in Adventuring.
+
+\textbf{Social} is interacting with other (at least somewhat) intelligent creatures in non-violent ways. This includes diplomacy, haggling, perceiving information about others, subterfuge and threats, but ít doesn't include stealth (but does include disguise) or illusion. Neither does it include a feint or trick during combat.
+
+The GM should make sure that the distinction between the Game Modes is clear. Whenever the encounter involves the environment and the characters aren't directly interacting with other creatures, it's an Adventuring encounter. If the characters are talking or communicating directly with non-player creatures, it's a Social encounter. If the characters are hostile towards creatures, they're in a combat encounter. An action's Game Mode is not determined by the encounter's dominant Game Mode, but by the action itself.
+
+Of course, not every encounter can be resolved by every type of Game Mode. While it is entirely possible to sneak past a group of enemies or intimidate into letting you pass, it may not be possible to resolve a mystery-murder-case by Combat.
+
+\section{Levelling}
+A character’s basic abilities are tracked for each of the Game Modes. For overcoming an encounter thanks to a Game Mode, a character can gain 1 to 3 XP in that Game Mode, depending on the challenge’s importance, difficulty, and how well the characters handled it. The level that character has in a Game Mode is derived from the amount of XP the character they have collected (see table below), starting at Level 0/0 XP for each Game Mode. What constitutes as challenge for a Game Mode is described in each of the Mode descriptions.
+
+Generally speaking, a character can gain double the XP if they handle the challenge in another Game Mode.
+
+A character can add the Game Mode Level to a check in the Game Mode if they're trained in that specific task (See the Weapon Perk and Skill Perk sections for more information). For example, in Combat, a weapon attack roll for an attack the character is trained in is \\
+\begin{center}
+1D12 + Attribute + Combat Level + MODS\\
+
+\rowcolors{2}{lightgray}{white}
+\begin{tabular}{r r | r r}
+Level & XP needed & Level & XP needed\\ \hline
+1 & 1 & 11 & 221\\
+2 & 5 & 12 & 265\\
+3 & 13 & 13 & 313\\
+4 & 25 & 14 & 365\\
+5 & 41 & 15 & 421\\
+6 & 61 & 16 & 481\\
+7 & 85 & 17 & 545\\
+8 & 113 & 18 & 613\\
+9 & 145 & 19 & 685\\
+10 & 181 & 20 & 761\\
+\end{tabular}\\~\\
+
+Theoretically, a character can reach higher levels than 20 (however, this requires a lot of playing). When calculating the XP cost for these cases, use the following formula:\\
+
+XP needed = (XP needed for current level) + (current level * 4)\\~\\
+
+Or, if you don't like recursive functions:\\
+XP needed for a level = 2 * (level - 1) * level + 1\\~\\
+
+Also, the formula for the current level derived from your XP is:\\
+
+Level = floor (1/2 + (SQRT(2*XP - 1)  + 1)\\
+\end{center}
