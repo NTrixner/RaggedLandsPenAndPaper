@@ -1,21 +1,21 @@
 \chapter{Base Perks}\label{ch:basePerks}
 This category includes all types of perks that are used to increase a character's base values
 
-\subsection{Health Pool}\label{subsec:healthPool}
-\textbf{Tags:} P,B,R\\
+\section{Health Pool}\label{sec:healthpool}
+\textbf{Tags:} P, B, R\\
 \textbf{Cost:} 0 Gold\\
 \textbf{Requirements:} -\\
 You increase your Health by 1D6 + Vitality.
 Each time you gain a higher level for this perk, your Health is increased again.\\
 \\
-Level Progression: \textbf{Cost} = Current Perk Level * 50 + Cost of last level\\
+Level Progression: \textbf{Cost} = Current Perk Level * 50 + Cost of previous level\\
 \\
 This means means the progression for the first 17 levels is as follows:\\
 \\
 \begin{minipage}{0.25\textwidth}
     \rowcolors{2}{lightgray}{white}
     \begin{tabular}{l | l}
-        Level & Cost\\ \hline
+        Level & Cost\\
         II & 50\\
         III & 150\\
         IV & 300\\
@@ -27,52 +27,410 @@ This means means the progression for the first 17 levels is as follows:\\
     \begin{tabular}{l | l}
         Level & Cost\\ \hline
         VI & 750\\
-        VII & 1050\\
-        VIII & 1400\\
-        IX & 1800\\
+        VII & 1.050\\
+        VIII & 1.400\\
+        IX & 1.800\\
     \end{tabular}
 \end{minipage}
 \begin{minipage}{0.25\textwidth}
     \rowcolors{2}{lightgray}{white}
     \begin{tabular}{l | l}
         Level & Cost\\ \hline
-        X & 2250\\
-        XI & 2750\\
-        XII & 3300\\
-        XIII & 3900\\
+        X & 2.250\\
+        XI & 2.750\\
+        XII & 3.300\\
+        XIII & 3.900\\
     \end{tabular}
 \end{minipage}
 \begin{minipage}{0.25\textwidth}
     \rowcolors{2}{lightgray}{white}
     \begin{tabular}{l | l}
         Level & Cost\\ \hline
-        XIV & 4550\\
-        XV & 5250\\
-        XVI & 6000\\
-        XVII & 6800\\
+        XIV & 4.550\\
+        XV & 5.250\\
+        XVI & 6.000\\
+        XVII & 6.800\\
     \end{tabular}
 \end{minipage}
 
-\subsection{Bodily Thoughness}\label{subsec:bodilyThoughness}
+\section{Bodily Thoughness}\label{sec:bodilythoughness}
+\textbf{Tags:} P, B, R, Augment\\
+\textbf{Cost:} 200 Gold\\
+\textbf{Requirements:} -\\
+Whenever you gain a level in "Health Pool", you roll \textbf{1D8} instead of \textbf{1D6}.
+Don't reroll the levels of "Health Pool" you already have.
+Instead, for every level you already have in "Health Pool", your Health increases by 1.\\
+\\
+Level Progression:\\
+\\
+\rowcolors{2}{lightgray}{white}
+\begin{tabular}{l | l | 1 | 1}
+    Level & Cost & Die & Health Pool Bonus\\
+    II & 2.500 & 1D10 & +1 per level of Health Pool owned\\
+    III & 5.000 & 1D12 & +1 per level of Health Pool owned\\
+    IV & 50.000 & 1D20 & +4 per level of Health Pool owned\\
+\end{tabular}
 
-\subsection{Stamina Pool}\label{subsec:staminaPool}
+\section{Stamina Pool}\label{sec:staminapool}
+\textbf{Tags:} P, B, R\\
+\textbf{Cost:} 0 Gold\\
+\textbf{Requirements:} -\\
+You increase your Stamina by 1D6 + Strength.
+Each time you gain a higher level for this perk, your Stamina is increased again.\\
+\\
+Level Progression: \textbf{Cost} = Current Perk Level * 50 + Cost of previous level\\
+\\
+This means means the progression for the first 17 levels is as follows:\\
+\\
+\begin{minipage}{0.25\textwidth}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{l | l}
+        Level & Cost\\
+        II & 50\\
+        III & 150\\
+        IV & 300\\
+        V & 500\\
+    \end{tabular}
+\end{minipage}
+\begin{minipage}{0.25\textwidth}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{l | l}
+        Level & Cost\\ \hline
+        VI & 750\\
+        VII & 1.050\\
+        VIII & 1.400\\
+        IX & 1.800\\
+    \end{tabular}
+\end{minipage}
+\begin{minipage}{0.25\textwidth}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{l | l}
+        Level & Cost\\ \hline
+        X & 2.250\\
+        XI & 2.750\\
+        XII & 3.300\\
+        XIII & 3.900\\
+    \end{tabular}
+\end{minipage}
+\begin{minipage}{0.25\textwidth}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{l | l}
+        Level & Cost\\ \hline
+        XIV & 4.550\\
+        XV & 5.250\\
+        XVI & 6.000\\
+        XVII & 6.800\\
+    \end{tabular}
+\end{minipage}
 
-\subsection{Long Breath}\label{subsec:longBreath}
+\section{Long Breath}\label{sec:longbreath}
+\textbf{Tags:} P, B, R, Augment\\
+\textbf{Cost:} 200 Gold\\
+\textbf{Requirements:} -\\
+Whenever you gain a level in "Stamina Pool", you roll \textbf{1D8} instead of \textbf{1D6}.
+Don't reroll the levels of "Stamina Pool" you already have.
+Instead, for every level you already have in "Stamina Pool", your Stamina increases by 1.\\
+\\
+Level Progression:\\
+\\
+\rowcolors{2}{lightgray}{white}
+\begin{tabular}{l | l | 1 | 1}
+    Level & Cost & Die & Stamina Pool Bonus\\
+    II & 2.500 & 1D10 & +1 per level of Stamina Pool owned\\
+    III & 5.000 & 1D12 & +1 per level of Stamina Pool owned\\
+    IV & 50.000 & 1D20 & +4 per level of Stamina Pool owned\\
+\end{tabular}
 
-\subsection{Mana Pool}\label{subsec:manaPool}
+\section{Mana Pool}\label{sec:manapool}
+\textbf{Tags:} P, B, R\\
+\textbf{Cost:} 0 Gold\\
+\textbf{Requirements:} -\\
+You increase your Mana by 1D6 + Intellect.
+Each time you gain a higher level for this perk, your Mana is increased again.\\
+\\
+Level Progression: \textbf{Cost} = Current Perk Level * 50 + Cost of previous level\\
+\\
+This means means the progression for the first 17 levels is as follows:\\
+\\
+\begin{minipage}{0.25\textwidth}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{l | l}
+        Level & Cost\\
+        II & 50\\
+        III & 150\\
+        IV & 300\\
+        V & 500\\
+    \end{tabular}
+\end{minipage}
+\begin{minipage}{0.25\textwidth}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{l | l}
+        Level & Cost\\ \hline
+        VI & 750\\
+        VII & 1.050\\
+        VIII & 1.400\\
+        IX & 1.800\\
+    \end{tabular}
+\end{minipage}
+\begin{minipage}{0.25\textwidth}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{l | l}
+        Level & Cost\\ \hline
+        X & 2.250\\
+        XI & 2.750\\
+        XII & 3.300\\
+        XIII & 3.900\\
+    \end{tabular}
+\end{minipage}
+\begin{minipage}{0.25\textwidth}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{l | l}
+        Level & Cost\\ \hline
+        XIV & 4.550\\
+        XV & 5.250\\
+        XVI & 6.000\\
+        XVII & 6.800\\
+    \end{tabular}
+\end{minipage}
 
-\subsection{Enduring Spellcaster}\label{subsec:enduringSpellcaster}
+\section{Enduring Spellcaster}\label{sec:enduringspellcaster}
+\textbf{Tags:} P, B, R, Augment\\
+\textbf{Cost:} 200 Gold\\
+\textbf{Requirements:} -\\
+Whenever you gain a level in "Mana Pool", you roll \textbf{1D8} instead of \textbf{1D6}.
+Don't reroll the levels of "Mana Pool" you already have.
+Instead, for every level you already have in "Mana Pool", your Mana increases by 1.\\
+\\
+Level Progression:\\
+\\
+\rowcolors{2}{lightgray}{white}
+\begin{tabular}{l | l | 1 | 1}
+    Level & Cost & Die & Mana Pool Bonus\\
+    II & 2.500 & 1D10 & +1 per level of Mana Pool owned\\
+    III & 5.000 & 1D12 & +1 per level of Mana Pool owned\\
+    IV & 50.000 & 1D20 & +4 per level of Mana Pool owned\\
+\end{tabular}
 
-\subsection{Increase Agility}\label{subsec:increaseAgility}
+\section{Increase Agility}\label{sec:increaseagility}
+\textbf{Tags:} P, B, R\\
+\textbf{Cost:} 200 Gold\\
+\textbf{Requirements:} -\\
+You increase your Agility value by one, to a maximum of 12.
+Each time you gain a higher level for this perk, your Agility value increases by another point, to a maximum of 12.\\
+\\
+Level Progression:\\
+\\
+\begin{minipage}{0.5\textwidth}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{l | l}
+        Level & Cost\\
+        II & 500\\
+        III & 750\\
+        IV & 2.500\\
+        V & 5.000\\
+        VI & 7.500\\
+    \end{tabular}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{l | l}
+        Level & Cost\\ \hline
+        VII & 25.000\\
+        VIII & 50.000\\
+        IX & 75.000\\
+        X & 250.000\\
+        XI & 500.000\\
+    \end{tabular}
+\end{minipage}
 
-\subsection{Increase Dexterity}\label{subsec:increaseDexterity}
+\section{Increase Dexterity}\label{sec:increasedexterity}
+\textbf{Tags:} P, B, R\\
+\textbf{Cost:} 200 Gold\\
+\textbf{Requirements:} -\\
+You increase your Dexterity value by one, to a maximum of 12.
+Each time you gain a higher level for this perk, your Dexterity value increases by another point, to a maximum of 12.\\
+\\
+Level Progression:\\
+\\
+\begin{minipage}{0.5\textwidth}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{l | l}
+        Level & Cost\\
+        II & 500\\
+        III & 750\\
+        IV & 2.500\\
+        V & 5.000\\
+        VI & 7.500\\
+    \end{tabular}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{l | l}
+        Level & Cost\\ \hline
+        VII & 25.000\\
+        VIII & 50.000\\
+        IX & 75.000\\
+        X & 250.000\\
+        XI & 500.000\\
+    \end{tabular}
+\end{minipage}
 
-\subsection{Increase Empathy}\label{subsec:increaseEmpathy}
+\section{Increase Empathy}\label{sec:increaseempathy}
+\textbf{Tags:} P, B, R\\
+\textbf{Cost:} 200 Gold\\
+\textbf{Requirements:} -\\
+You increase your Empathy value by one, to a maximum of 12.
+Each time you gain a higher level for this perk, your Empathy value increases by another point, to a maximum of 12.\\
+\\
+Level Progression:\\
+\\
+\begin{minipage}{0.5\textwidth}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{l | l}
+        Level & Cost\\
+        II & 500\\
+        III & 750\\
+        IV & 2.500\\
+        V & 5.000\\
+        VI & 7.500\\
+    \end{tabular}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{l | l}
+        Level & Cost\\ \hline
+        VII & 25.000\\
+        VIII & 50.000\\
+        IX & 75.000\\
+        X & 250.000\\
+        XI & 500.000\\
+    \end{tabular}
+\end{minipage}
 
-\subsection{Increase Intellect}\label{subsec:increaseIntellect}
+\section{Increase Intellect}\label{sec:increaseintellect}
+\textbf{Tags:} P, B, R\\
+\textbf{Cost:} 200 Gold\\
+\textbf{Requirements:} -\\
+You increase your Intellect value by one, to a maximum of 12.
+Each time you gain a higher level for this perk, your Intellect value increases by another point, to a maximum of 12.\\
+\\
+Level Progression:\\
+\\
+\begin{minipage}{0.5\textwidth}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{l | l}
+        Level & Cost\\
+        II & 500\\
+        III & 750\\
+        IV & 2.500\\
+        V & 5.000\\
+        VI & 7.500\\
+    \end{tabular}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{l | l}
+        Level & Cost\\ \hline
+        VII & 25.000\\
+        VIII & 50.000\\
+        IX & 75.000\\
+        X & 250.000\\
+        XI & 500.000\\
+    \end{tabular}
+\end{minipage}
 
-\subsection{Increase Perception}\label{subsec:increasePerception}
+\section{Increase Perception}\label{sec:increaseperception}
+\textbf{Tags:} P, B, R\\
+\textbf{Cost:} 200 Gold\\
+\textbf{Requirements:} -\\
+You increase your Perception value by one, to a maximum of 12.
+Each time you gain a higher level for this perk, your Perception value increases by another point, to a maximum of 12.\\
+\\
+Level Progression:\\
+\\
+\begin{minipage}{0.5\textwidth}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{l | l}
+        Level & Cost\\
+        II & 500\\
+        III & 750\\
+        IV & 2.500\\
+        V & 5.000\\
+        VI & 7.500\\
+    \end{tabular}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{l | l}
+        Level & Cost\\ \hline
+        VII & 25.000\\
+        VIII & 50.000\\
+        IX & 75.000\\
+        X & 250.000\\
+        XI & 500.000\\
+    \end{tabular}
+\end{minipage}
 
-\subsection{Increase Strength}\label{subsec:increaseStrength}
+\section{Increase Strength}\label{sec:increasestrength}
+\textbf{Tags:} P, B, R\\
+\textbf{Cost:} 200 Gold\\
+\textbf{Requirements:} -\\
+You increase your Strength value by one, to a maximum of 12.
+Each time you gain a higher level for this perk, your Strength value increases by another point, to a maximum of 12.\\
+\\
+Level Progression:\\
+\\
+\begin{minipage}{0.5\textwidth}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{l | l}
+        Level & Cost\\
+        II & 500\\
+        III & 750\\
+        IV & 2.500\\
+        V & 5.000\\
+        VI & 7.500\\
+    \end{tabular}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{l | l}
+        Level & Cost\\ \hline
+        VII & 25.000\\
+        VIII & 50.000\\
+        IX & 75.000\\
+        X & 250.000\\
+        XI & 500.000\\
+    \end{tabular}
+\end{minipage}
 
-\subsection{Increase Vitality}\label{subsec:increaseVitality}
+\section{Increase Vitality}\label{sec:increasevitality}
+\textbf{Tags:} P, B, R\\
+\textbf{Cost:} 200 Gold\\
+\textbf{Requirements:} -\\
+You increase your Vitality value by one, to a maximum of 12.
+Each time you gain a higher level for this perk, your Vitality value increases by another point, to a maximum of 12.\\
+\\
+Level Progression:\\
+\\
+\begin{minipage}{0.5\textwidth}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{l | l}
+        Level & Cost\\
+        II & 500\\
+        III & 750\\
+        IV & 2.500\\
+        V & 5.000\\
+        VI & 7.500\\
+    \end{tabular}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{l | l}
+        Level & Cost\\ \hline
+        VII & 25.000\\
+        VIII & 50.000\\
+        IX & 75.000\\
+        X & 250.000\\
+        XI & 500.000\\
+    \end{tabular}
+\end{minipage}
