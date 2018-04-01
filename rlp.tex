@@ -3,8 +3,17 @@
 \usepackage[toc,page]{appendix}
 \usepackage[table]{xcolor}
 \usepackage{makecell, multicol, wrapfig, longtable}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
 
-
+\setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{0}
 
 \begin{document}
 	\title{Ragged Lands Pen and Paper System}
@@ -58,6 +67,7 @@
 	\input{./npcs/overview.tex}
 \newpage
 
+\addcontentsline{toc}{part}{Appendices}
 \begin{appendices}
 	\input{./appendices/damage}
 	\input{./appendices/conditions}
