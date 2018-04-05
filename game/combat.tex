@@ -32,11 +32,16 @@ As an alternative approach, an experienced GM may decide to not use AP at all. T
 
 In order to attack an opponent, the character has to be in reach of said opponent. This reach is defined by the character’s weapon. He then has to make an attack roll:
 
-Attack roll = 1D12 + STR/DEX/AG + Prof Bonus + misc
+Attack roll = 1D12 + STR/DEX/AG + [Combat Level + XD4] + misc
 
-If the attacker is trained in the weapon they are using, they can also add their Combat Level.
+The Combat level and D4s can only be added if the character is trained to a certain amount in the Weapon Training perk of the weapon they are using.
 
-The target of the attack now has multiple options: Dodge, Block or take the hit. All of these actions - except taking the hit - require a successful check and a specific amount of Stamina.
+If the attacker has an attack roll that is higher than the defender's Reaction Value, the defender can not react to the attack. This is also the case if the defender is unaware of the attacker. Otherwise, the defender can react in one of three ways: Dodge, Block or take the hit. All of these actions - except taking the hit - require a successful check and a specific amount of Stamina.
+The defender's Reaction Value is equal to:
+
+RV = 7 + PE + [Combat Level + X*2] + misc
+
+The Combat level and 2s can only be added if the character is trained to a certain amount in the Armor Training perk of the armor they are wearing.
 
 The amount of stamina used for a defensive action is based on the amount of damage dice that the attacker would get, including additional dice from different sources. For example, slashing with an arming sword deals 1d8 points of damage. Dodging costs 2 Stamina per damage die, therefore it costs 2 Stamina to dodge a slash from an arming sword. If the attacker uses the Brutal Attack Perk, however, they can add damage dice to the roll. When adding a second damage die before the roll, blocking the attack becomes more difficult, costing 4 Stamina instead of 2.
 
@@ -54,7 +59,7 @@ When you roll a Natural 1 on a Weapon attack, you automatically miss your attack
 
 
 
-\item Dodge [Defensive; 3 Stamina per attacking Damage Die]
+\item Dodge [Defensive; 2 Stamina per attacking Damage Die]
 
 Dodging requires an Agility check against the attack roll. If the defender is trained in the armor they are wearing, they can add their Combat Level to this check. If the defender succeeds this check, they move one passus to a free spot and take no damage. If there is no free spot, or the defender’s roll failed, they take normal damage instead. Dodging can be used against melee and ranged attacks.
 

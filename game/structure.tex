@@ -36,26 +36,26 @@ A character can add the Game Mode Level to a check in the Game Mode if they're t
 \rowcolors{2}{lightgray}{white}
 \begin{tabular}{r r | r r}
 Level & XP needed & Level & XP needed\\ \hline
-1 & 1 & 11 & 221\\
-2 & 5 & 12 & 265\\
-3 & 13 & 13 & 313\\
-4 & 25 & 14 & 365\\
-5 & 41 & 15 & 421\\
-6 & 61 & 16 & 481\\
-7 & 85 & 17 & 545\\
-8 & 113 & 18 & 613\\
-9 & 145 & 19 & 685\\
-10 & 181 & 20 & 761\\
+2 & 1 & 12 & 221\\
+3 & 5 & 13 & 265\\
+4 & 13 & 14 & 313\\
+5 & 25 & 15 & 365\\
+6 & 41 & 16 & 421\\
+7 & 61 & 17 & 481\\
+8 & 85 & 18 & 545\\
+9 & 113 & 19 & 613\\
+10 & 145 & 20 & 685\\
+11 & 181 & 21 & 761\\
 \end{tabular}\\~\\
 
-Theoretically, a character can reach higher levels than 20 (however, this requires a lot of playing). When calculating the XP cost for these cases, use the following formula:\\
+%Theoretically, a character can reach higher levels than 21 (however, this requires a lot %of playing). When calculating the XP cost for these cases, use the following formula:\\
 
-XP needed = (XP needed for current level) + (current level * 4)\\~\\
+%XP needed = (XP needed for last level) + (last level * 4)\\~\\
 
-Or, if you don't like recursive functions:\\
-XP needed for a level = 2 * (level - 1) * level + 1\\~\\
+%Or, if you don't like recursive functions:\\
+%XP needed for a level = 2 * (level - 1) * level + 1\\~\\
 
-Also, the formula for the current level derived from your XP is:\\
+%Also, the formula for the current level derived from your XP is:\\
 
-Level = floor (1/2 + (SQRT(2*XP - 1)  + 1)\\
+%Level = floor (1/2 + (SQRT(2*XP - 1)  + 1)\\
 \end{center}
