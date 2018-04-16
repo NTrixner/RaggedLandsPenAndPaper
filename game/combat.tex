@@ -26,6 +26,13 @@ As an alternative approach, an experienced GM may decide to not use AP at all. T
 
 \section{Actions in combat}
 
+\subsection{Combining Actions}
+Broadly speaking, actions are divided into two categories - movement actions and static actions. Whenever a character acts, they can spend up to as many AP for movement actions as they have Agility, in addition to making one static action. After doing so, they cannot act until as many AP have passed as the sum of actions they took cost.
+
+For example, a character with 7 Agility may run 14 Passus, paying 7 Stamina in the process, and then do an attack that costs 4 AP. Afterwards, they can not act again for 11 AP.
+
+\subsection{Static Actions}
+
 \begin{itemize}
 
 \item Attack [AP depending on weapon]
@@ -45,13 +52,13 @@ The Combat level and 2s can only be added if the character is trained to a certa
 
 The amount of stamina used for a defensive action is based on the amount of damage dice that the attacker would get, including additional dice from different sources. For example, slashing with an arming sword deals 1d8 points of damage. Dodging costs 2 Stamina per damage die, therefore it costs 2 Stamina to dodge a slash from an arming sword. If the attacker uses the Brutal Attack Perk, however, they can add damage dice to the roll. When adding a second damage die before the roll, blocking the attack becomes more difficult, costing 4 Stamina instead of 2.
 
-The DV for the defensive check is the attack roll. The defensive action may prevent any damage from happening. Otherwise, the attacker rolls damage according to his weapon. The defensive action and the defender's armor may reduce that damage, and the rest is dealt to the defender’s health.
+The DV for the defensive check is the attack roll. The defensive action may prevent any damage from happening. Otherwise, the attacker rolls damage according to his weapon. The defensive action and the defender's armor may reduce that damage, and the rest is dealt to the defender’s health. Also, there is a chance to wound the opponent. The attacker rolls a 1d6 to decide which body part they hit and roll damage normally. If the damage dealt is larger than the wound threshold that the defender's armor at that body part provides, a wound of the weapon's damage type is caused. If the weapon deals multiple types of damage, each type of damage is treated differently for wounding. Therefore each type of damage has to beat the threshold, but each multiple types of damage may cause multiple wounds with one attack. See below for different wound types and their effects. 
 
 
 
 \textbf{Fumbles and Critical hits}
 
-When you roll a Natural 12 on a Weapon attack roll, you automatically hit as if the defender would take the “Take Hit” action and deal damage as if the defender wasn’t wearing armor. Also, there is a chance to wound the opponent. The attacker rolls a 1d6 to decide which body part they hit and roll damage normally. If the damage dealt is larger than the wound threshold that the defender's armor at that body part provides, a wound of the weapon's damage type is caused. If the weapon deals multiple types of damage, each type of damage is treated differently for wounding. Therefore each type of damage has to beat the threshold, but each multiple types of damage may cause multiple wounds with one attack. See below for different wound types and their effects. 
+When you roll a Natural 12 on a Weapon attack roll, you automatically hit as if the defender would take the “Take Hit” action and deal additional damage. This means that any weapon damage die is rolled twice when determining the damage of the attack.
 
 This is called a “critical hit”, and some enemies are immune to it or have a chance to resist a critical hit.
 
@@ -83,6 +90,13 @@ When a defensive action (except taking the hit) reduces a melee attack's damage 
 
 
 
+\item Fight defensively [1 AP]
+
+A character can decide to fight defensively for the duration of one Action Point. If they do so, they gain +4 on defensive rolls for that duration. A character may declare to fight defensively for a specific amount of time, or until a certain condition is met. In the latter case, they act again on the AP count after that condition triggers.
+
+
+\subsection{Movement Actions}
+
 \item Move [1 AP per passus]
 
 In order to move in a strategic manner, the character has to pay 1 AP per passus (approximately 1.5m, or 5 feet) moved. 
@@ -92,6 +106,14 @@ In order to move in a strategic manner, the character has to pay 1 AP per passus
 \item Run  [1 AP per 2 passus]
 
 In order to run to a specific position, the character loses 1 stamina per 2 passus. If two characters try to run to the same spot at the same time, an Agility-check decides who arrives first. If one of them is further away from their goal, this contestant gains a malus of 1 for every passus of difference.
+
+
+
+\item Draw/Sheathe Weapon  [AP cost depends]
+
+When not armed, a character first hast to draw their weapon. Also, if they want to change weapons, they usually have to either drop the weapon they're wearing (which doesn't cost any AP) or sheathe it, before drawing a different weapon. The AP to do so is equals to the AP cost of the most expensive action the weapon allows.
+
+
 \end{itemize}
 
 \section{Wounds}
