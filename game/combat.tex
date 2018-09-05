@@ -54,6 +54,8 @@ The amount of stamina used for a defensive action is based on the amount of dama
 
 The DV for the defensive check is the attack roll. The defensive action may prevent any damage from happening. Otherwise, the attacker rolls damage according to his weapon. The defensive action and the defender's armor may reduce that damage, and the rest is dealt to the defender’s health. Also, there is a chance to wound the opponent. The attacker rolls a 1d6 to decide which body part they hit and roll damage normally. If the damage dealt is larger than the wound threshold that the defender's armor at that body part provides, a wound of the weapon's damage type is caused. If the weapon deals multiple types of damage, each type of damage is treated differently for wounding. Therefore each type of damage has to beat the threshold, but each multiple types of damage may cause multiple wounds with one attack. See below for different wound types and their effects. 
 
+An attacker can choose to target a specific body part. By default, any attack is considered to attack the torso. Other targets are the Head, the arms and the legs. For attacking the head, the attack roll takes a -6 penalty. Attacking the arms is a penalty of -4 and attacking the legs is -2.
+
 
 
 \textbf{Fumbles and Critical hits}
@@ -117,18 +119,15 @@ When not armed, a character first hast to draw their weapon. Also, if they want 
 \end{itemize}
 
 \section{Wounds}
-Every character has a wound threshold, which is equals to their Vitality + a bonus provided by armor and other sources. Whenever an attack deals more damage than the target's wound threshold, a wound is caused. It is applied to a random body part (roll a d6 and consult the table below). The amount by which it exceeds the wound threshold is known as the wound's value. For example, a character with a wound threshold of 3 receiving a Torso wound by being dealt a critical hit for 5 cutting damage would take 2 damage per minute. If the wound was aimed at the head, it would deal 4 damage per minute instead.\\
-A wound is typed, and if an attack deals multiple different damage types, they are treated as different attacks for this purpose.
+Every character has a wound threshold, which is equals to their Vitality + a bonus provided by armor and other sources. Whenever an attack deals more damage than the target's wound threshold, a wound is caused. It is applied to the body part that was attacked. By default, this is the torso. A wounded character has specific penalties according to the table below. Each body part can have a specific amount of wounds. The effects of wounds are cumulative. If a body part becomes fully wounded, it becomes crippled.
+A character heals one wound per day, and can choose which one to heal.
 
-The effects of wounds are cumulative, and after a body part receives 3 wounds (of any type), the body part becomes crippled, and the Crippled Condition of that body part is applied.\\
 
 \rowcolors{2}{lightgray}{white}
-\begin{tabular}{l p{1cm} p{5cm} p{3cm}}
-d6 & Body Part & Wound effect & Crippled effect\\ \hline
-1 & Torso & Damage per minute & Max/Current Health halved\\
-2 & Left Leg & -2 dodge rolls, +1 AP move/run & -4 Agility (min 1), Character loses Left Leg\\
-3 & Right Leg & -2 dodge rolls, +1 AP move/run & -4 Agility (min 1), Character loses Right Leg\\
-4 & Left Arm & -2 on Attack/Defense rolls with this arm & -2 Strength, -2 Dexterity. Character loses Left Arm\\
-5 & Right Arm & -2 on Attack/Defense rolls with this arm & -2 Strength, -2 Dexterity. Character loses Right Arm\\
-6 & Head & 2x Damage per minute & Death
+\begin{tabular}{p{1cm} | c | c | p{4cm} | p{4cm}}
+Body Part & Wounds & Atk. Mod. & Wound effect & Crippled effect \\ \hline
+Torso & 5 & 0 & 1 damage per AP spent on performing actions & Max/Current Health halved\\
+Legs & 4 & -2 & -2 on Dodge rolls, -2 on Agility & One leg becomes unusable, Agility becomes permanently halved \\
+Arms & 3 & -4 & -2 on Attack and Block rolls, -1 Strength, -1 Dexterity & Lose one Arm, halves Dexterity and Strength\\
+Head & 2 & -6 & 25\% chance of any action failing & Death\\
 \end{tabular}
