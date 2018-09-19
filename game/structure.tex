@@ -48,6 +48,20 @@ Level & XP needed & Level & XP needed\\ \hline
 11 & 181 & 21 & 761\\
 \end{tabular}\\~\\
 
+\end{center}
+
+\section{Gaining CP}
+
+Whenever a character gains XP, they also gain Character Points. The rate at which they gain Character Points increases with the specific level in which they gained XP.\\
+The formula for this is\\
+
+\begin{center}
+	CP gained = Specific Level x XP gained  x 100
+\end{center}
+
+This means that a character of combat level 3, who gained 1 combat XP after finishing a fight gains 300 Character Points for doing so. If the combat was hard, or this specific character contributed significantly to the fight, they might gain 2 XP, which means they would gain 600 Character Points instead.\\
+
+
 %Theoretically, a character can reach higher levels than 21 (however, this requires a lot %of playing). When calculating the XP cost for these cases, use the following formula:\\
 
 %XP needed = (XP needed for last level) + (last level * 4)\\~\\
@@ -58,4 +72,3 @@ Level & XP needed & Level & XP needed\\ \hline
 %Also, the formula for the current level derived from your XP is:\\
 
 %Level = floor (1/2 + (SQRT(2*XP - 1)  + 1)\\
-\end{center}

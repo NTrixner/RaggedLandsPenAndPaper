@@ -68,6 +68,18 @@ When you roll a Natural 1 on a Weapon attack, you automatically miss your attack
 
 
 
+\item Trip [AP depending on weapon; 5 Stamina]
+
+Make an attack roll against a standing opponent, taking additional 5 Stamina. Your attack roll is contested by the enemy's dodge roll. This dodge roll does not cost any Stamina. For every foot (or other type of grounding appendage) the enemy has, they gain +1 on their roll. When your enemy fails, they drop prone.\\
+Unlike a normal attack, a trip does not deal damage. Also, the enemy can react regardless of their Reaction Value.\\
+
+
+
+\item Disarm [AP depending on weapon; 5 Stamina]
+
+You attack one opponent that is armed with a manufactured weapon. Make a weapon attack roll, taking an additional 5 Stamina, opposed by the enemy's weapon attack roll. If you succeed, the enemy drops their weapon to the floor. You don't deal damage with this attack.\\
+
+
 \item Dodge [Defensive; 2 Stamina per attacking Damage Die]
 
 Dodging requires an Agility check against the attack roll. If the defender is trained in the armor they are wearing, they can add their Combat Level to this check. If the defender succeeds this check, they move one passus to a free spot and take no damage. If there is no free spot, or the defender’s roll failed, they take normal damage instead. Dodging can be used against melee and ranged attacks.
@@ -105,10 +117,15 @@ In order to move in a strategic manner, the character has to pay 1 AP per passus
 
 
 
-\item Run  [1 AP per 2 passus]
+\item Run [1 AP per 2 passus]
 
 In order to run to a specific position, the character loses 1 stamina per 2 passus. If two characters try to run to the same spot at the same time, an Agility-check decides who arrives first. If one of them is further away from their goal, this contestant gains a malus of 1 for every passus of difference.
 
+
+
+\item Move safely [2 AP per 1 passus]
+
+In order to move to a specific position without taking damage from a torswo wound, the character uses two AP per 1 passus moved.
 
 
 \item Draw/Sheathe Weapon  [AP cost depends]
@@ -119,7 +136,7 @@ When not armed, a character first hast to draw their weapon. Also, if they want 
 \end{itemize}
 
 \section{Wounds}
-Every character has a wound threshold, which is equals to their Vitality + a bonus provided by armor and other sources. Whenever an attack deals more damage than the target's wound threshold, a wound is caused. It is applied to the body part that was attacked. By default, this is the torso. A wounded character has specific penalties according to the table below. Each body part can have a specific amount of wounds. The effects of wounds are cumulative. If a body part becomes fully wounded, it becomes crippled.
+Every character has a wound threshold, which is equals to their Vitality + their combat level + a bonus provided by armor and other sources. Whenever an attack deals more damage than the target's wound threshold, a wound is caused. It is applied to the body part that was attacked. By default, this is the torso. A wounded character has specific penalties according to the table below. Each body part can have a specific amount of wounds. The effects of wounds are cumulative. If a body part becomes fully wounded, it becomes crippled.
 A character heals one wound per day, and can choose which one to heal.
 
 
@@ -127,7 +144,7 @@ A character heals one wound per day, and can choose which one to heal.
 \begin{tabular}{p{1cm} | c | c | p{4cm} | p{4cm}}
 Body Part & Wounds & Atk. Mod. & Wound effect & Crippled effect \\ \hline
 Torso & 5 & 0 & 1 damage per AP spent on performing actions & Max/Current Health halved\\
-Legs & 4 & -2 & -2 on Dodge rolls, -2 on Agility & One leg becomes unusable, Agility becomes permanently halved \\
-Arms & 3 & -4 & -2 on Attack and Block rolls, -1 Strength, -1 Dexterity & Lose one Arm, halves Dexterity and Strength\\
-Head & 2 & -6 & 25\% chance of any action failing & Death\\
+Legs & 4 & -4 & -2 on Dodge rolls, -2 on Agility & One leg becomes unusable, Agility becomes permanently halved \\
+Arms & 3 & -8 & -2 on Attack and Block rolls, -1 Strength, -1 Dexterity & Lose one Arm, halves Dexterity and Strength\\
+Head & 2 & -12 & 25\% chance of any action failing & Death\\
 \end{tabular}
