@@ -39,28 +39,25 @@ For example, a character with 7 Agility may run 14 Passus, paying 7 Stamina in t
 
 In order to attack an opponent, the character has to be in reach of said opponent. This reach is defined by the character’s weapon. He then has to make an attack roll:
 
-Attack roll = 1D12 + STR/DEX/AG + [Combat Level + XD4] + misc
+Attack roll = 1D12 + STR/DEX/AG + Combat Level + [XD4] + misc
 
-The Combat level and D4s can only be added if the character is trained to a certain amount in the Weapon Training perk of the weapon they are using.
+The D4s can only be added if the character is trained to a certain amount in the attack they are making.
 
 If the attacker has an attack roll that is higher than the defender's Reaction Value, the defender can not react to the attack. This is also the case if the defender is unaware of the attacker. Otherwise, the defender can react in one of three ways: Dodge, Block or take the hit. All of these actions - except taking the hit - require a successful check and a specific amount of Stamina.
 The defender's Reaction Value is equal to:
 
-RV = 7 + PE + [Combat Level + X*2] + misc
+RV = 7 + PE + Combat Level + [X*2] + misc
 
-The Combat level and 2s can only be added if the character is trained to a certain amount in the Armor Training perk of the armor they are wearing.
+The 2s can only be added if the character is trained to a certain amount in the Armor Training perk of the armor they are wearing.
 
-The amount of stamina used for a defensive action is based on the amount of damage dice that the attacker would get, including additional dice from different sources. For example, slashing with an arming sword deals 1d8 points of damage. Dodging costs 2 Stamina per damage die, therefore it costs 2 Stamina to dodge a slash from an arming sword. If the attacker uses the Brutal Attack Perk, however, they can add damage dice to the roll. When adding a second damage die before the roll, blocking the attack becomes more difficult, costing 4 Stamina instead of 2.
+The amount of stamina used for a defensive action is based on the amount of damage dice that the attacker would get, including additional dice from different sources. For example, slashing with an arming sword deals damage die. Dodging costs 2 Stamina per damage die, therefore it costs 2 Stamina to dodge a slash from an arming sword.
 
-The DV for the defensive check is the attack roll. The defensive action may prevent any damage from happening. Otherwise, the attacker rolls damage according to his weapon. The defensive action and the defender's armor may reduce that damage, and the rest is dealt to the defender’s health. Also, there is a chance to wound the opponent. The attacker rolls a 1d6 to decide which body part they hit and roll damage normally. If the damage dealt is larger than the wound threshold that the defender's armor at that body part provides, a wound of the weapon's damage type is caused. If the weapon deals multiple types of damage, each type of damage is treated differently for wounding. Therefore each type of damage has to beat the threshold, but each multiple types of damage may cause multiple wounds with one attack. See below for different wound types and their effects. 
-
-An attacker can choose to target a specific body part. By default, any attack is considered to attack the torso. Other targets are the Head, the arms and the legs. For attacking the head, the attack roll takes a -6 penalty. Attacking the arms is a penalty of -4 and attacking the legs is -2.
-
+The DV for the defensive check is the attack roll. The defensive action may prevent any damage from happening. Otherwise, the attacker rolls damage according to his weapon. The defensive action and the defender's armor may reduce that damage, and the rest is dealt to the defender’s health. Also, there is a chance to wound the opponent. By default, it's assumed an attack is aimed at the torso of the defender. The attacker can choose to target a different body part by invoking a malus (See wounds below). If the damage dealt is larger than the wound threshold that the defender's armor at that body part provides, a wound of the weapon's damage type is caused. If the weapon deals multiple types of damage, each type of damage is treated differently for wounding. Therefore each type of damage has to beat the threshold, but multiple types of damage may cause multiple wounds with one attack. See below for different wound types and their effects. 
 
 
 \textbf{Fumbles and Critical hits}
 
-When you roll a Natural 12 on a Weapon attack roll, you automatically hit as if the defender would take the “Take Hit” action and deal additional damage. This means that any weapon damage die is rolled twice when determining the damage of the attack.
+When you roll a Natural 12 on a Weapon attack roll, you automatically hit as if the defender would take the “Take Hit” action and deal additional damage. This means that any weapon damage die is rolled twice, taking the total result when determining the damage of the attack.
 
 This is called a “critical hit”, and some enemies are immune to it or have a chance to resist a critical hit.
 
@@ -70,19 +67,19 @@ When you roll a Natural 1 on a Weapon attack, you automatically miss your attack
 
 \item Trip [AP depending on weapon; 5 Stamina]
 
-Make an attack roll against a standing opponent, taking additional 5 Stamina. Your attack roll is contested by the enemy's dodge roll. This dodge roll does not cost any Stamina. For every foot (or other type of grounding appendage) the enemy has, they gain +1 on their roll. When your enemy fails, they drop prone.\\
+Make a melee attack roll against a standing opponent, taking additional 5 Stamina. Your attack roll is contested by the enemy's dodge roll. This dodge roll does not cost any Stamina. For every foot (or other type of grounding appendage) the enemy has, they gain +1 on their roll. When your enemy fails, they drop prone.\\
 Unlike a normal attack, a trip does not deal damage. Also, the enemy can react regardless of their Reaction Value.\\
 
 
 
 \item Disarm [AP depending on weapon; 5 Stamina]
 
-You attack one opponent that is armed with a manufactured weapon. Make a weapon attack roll, taking an additional 5 Stamina, opposed by the enemy's weapon attack roll. If you succeed, the enemy drops their weapon to the floor. You don't deal damage with this attack.\\
+You attack one opponent that is armed with a manufactured weapon. Make a melee weapon attack roll, taking an additional 5 Stamina, opposed by the enemy's weapon attack roll. If you succeed, the enemy drops their weapon to the floor. You don't deal damage with this attack.\\
 
 
 \item Dodge [Defensive; 2 Stamina per attacking Damage Die]
 
-Dodging requires an Agility check against the attack roll. If the defender is trained in the armor they are wearing, they can add their Combat Level to this check. If the defender succeeds this check, they move one passus to a free spot and take no damage. If there is no free spot, or the defender’s roll failed, they take normal damage instead. Dodging can be used against melee and ranged attacks.
+Dodging requires an Agility check against the attack roll. If the defender succeeds this check, they move one passus to a free spot and take no damage. If there is no free spot, or the defender’s roll failed, they take normal damage instead. Dodging can be used against melee and ranged attacks.
 
 
 
@@ -94,7 +91,7 @@ Blocking requires a Weapon defense roll against the attacker's attack roll. If t
 
 \item Take Hit [Defensive; 0 Stamina]
 
-Taking the hit is the default defensive action, therefore it doesn’t cost anything. The attacker automatically hits, and when he didn’t roll a critical hit (A Natural 12), the weapon damage is reduced by the defender’s Armor Rating. Taking the hit can be used against melee and ranged attacks.
+Taking the hit is the default defensive action, therefore it doesn’t cost anything. The attacker automatically hits, and the weapon damage is reduced by the defender’s Armor Rating. Taking the hit can be used against melee and ranged attacks.
 
 
 
@@ -125,12 +122,12 @@ In order to run to a specific position, the character loses 1 stamina per 2 pass
 
 \item Move safely [2 AP per 1 passus]
 
-In order to move to a specific position without taking damage from a torswo wound, the character uses two AP per 1 passus moved.
+In order to move to a specific position without taking damage from wounds, the character uses two AP per 1 passus moved.
 
 
 \item Draw/Sheathe Weapon  [AP cost depends]
 
-When not armed, a character first hast to draw their weapon. Also, if they want to change weapons, they usually have to either drop the weapon they're wearing (which doesn't cost any AP) or sheathe it, before drawing a different weapon. The AP to do so is equals to the AP cost of the most expensive action the weapon allows.
+When not armed, a character first has to draw their weapon. Also, if they want to change weapons, they usually have to either drop the weapon they're wearing (which doesn't cost any AP) or sheathe it, before drawing a different weapon. The AP to do so is specified by the weapon.
 
 
 \end{itemize}
