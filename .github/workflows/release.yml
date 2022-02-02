@@ -11,11 +11,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Generate build number
-        uses: einaregilsson/build-number@v2 
-        id: buildnumber_creation
-        with:
-         token: ${{secrets.github_token}}
       - name: Set up Git repository
         uses: actions/checkout@v1
       - name: Github Action for LaTeX
@@ -28,8 +23,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ steps.buildnumber_creation.outputs.build_number }}
-          release_name: Release ${{ steps.buildnumber_creation.outputs.build_number }}
+          tag_name: ${{ GITHUB_RUN_NUMBER }}
+          release_name: Release ${{ GITHUB_RUN_NUMBER }}
           draft: false
           prerelease: false
       - name: Upload Release Asset
