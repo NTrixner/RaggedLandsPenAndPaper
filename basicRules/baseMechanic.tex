@@ -1,9 +1,9 @@
 \chapter{The base mechanic}
 \section{Attribute Checks}
-Every check is solved by a roll of a D12. You add a specific modifier to your roll, and maybe get additional bonuses if you’re trained in that specific task. Whenever you roll a check, you compare the outcome of your roll to a Difficulty Value (DV). If your roll beats that DV, you are able to perform that task. If your value is lower than the DV, you can not perform the task. If your roll value and the DV are equal, you roll again.
+Every check is solved by a roll of a D20 You add a specific modifier to your roll, and maybe get additional bonuses if you’re trained in that specific task. Whenever you roll a check, you compare the outcome of your roll to a Difficulty Value (DV). If your roll beats that DV, you are able to perform that task. If your value is lower than the DV, you can not perform the task. If your roll value and the DV are equal, you roll again.
 
 \subsection{Contests}
-Sometimes, two people compete in a task. In order to get the outcome, both people roll a D12 and add their relative modifiers, and optional additional dice. The one with the higher result wins the contest. If both rolls are the same, they are rolled again until they are not the same anymore.
+Sometimes, two people compete in a task. In order to get the outcome, both people roll a D20 and add their relative modifiers, and optional additional dice. The one with the higher result wins the contest. If both rolls are the same, they are rolled again until they are not the same anymore.
 
 \subsection{Helping Others}
 Sometimes, a character may be able to help another character with a difficult task. In such a case, the helping character makes the same check that the character receiving help has to complete. The character receiving help gains a modifier on their roll equals to the difference of the helping character and the DV. If multiple characters help someone, these differences are summed.
@@ -18,6 +18,11 @@ A character who wasn’t able to climb the wall last night when it rained, may b
 
 \section{Rounding}
 Since this System is written for experienced Tabletop-RPG players, there are a lot of formulas and straightforward calculations. Even though it’s noted everywhere, as a general rule, every time a division happens and the result would be a fraction when an integer is needed, you should round up.
+
+\section{Action Points}
+An Action Point \textbf{AP} is a unit of measurement for time. The length of an Action Point depends on the timeframe at which the current play takes place. For example, during the exploration of a Room or dungeon, an Action Point might be 1 Minute, while it might be an hour when it comes to Overland travel. For Combat, an Action Point is considered to be equal to around 2 or 3 seconds.
+In general, a GM would determine how many Action Points an action takes, communicate this with the players, and if they insist on performing said action, adjudicate the action immediately, but let time pass afterwards.
+Therefore, Action Points can be compared to a "Downtime" mechanic in modern videogames.
 
 \section{Attributes}
 There are seven main attributes in the RLP:
@@ -46,29 +51,30 @@ There are seven main attributes in the RLP:
 
 Each of these attributes are described as a value of 1-12, with 4-7 being average values. A character with a 2 in Empathy may not even be able to articulate a thought, while a character with an 11 in Empathy is able to persuade even kings.
 
+\section{Defensive Attributes}
+These values are derived from the main Attributes and describe defensive values that are used when a character would be target of some effect.
+
+
+\textbf{Dodge} is a character's ability to dodge an incoming attack. It is equal to 10 + AGI + Modifiers
+
+
+\textbf{Notice} is a carachter's ability to notice something unseen, like a noise, slight draft, or sneaking enemy. It is equal to 10 + PER + Modifiers
+
+
+\textbf{Willpower} is a character's ability to withstand emotional manipulation, as well as enchantment. It is equal to 10 + EMP + Modifiers.
+
+
 \section{Pool Values}
-For RLP, two main pool values are important, with a third being tracked, but really just important for magically trained characters. Every character starts with 1 level of the "Health Pool", "Stamina Pool" and "Mana Pool" Perks.
+For RLP, two main pool values are important, with a third being tracked, but really being just important for magically trained characters. The base number of these values is determined by a character's race.
 
 
-\textbf{Health} describes a character’s ability to withstand any type of damage. It can be seen as a combination of resilience, bodily health and luck. If a character reaches 0 Health, he is dead. Health can be restored by resting (See Recovering Pool values, below), by alchemy and by magic. A character that is dead can not be healed. Reviving magic doesn’t exist in the Ragged Lands.
+\textbf{Health} describes a character’s ability to withstand any type of damage. Health can be seen as a combination of resilience, bodily health and luck. If a character reaches 0 Health, he is \textbf{dead}. A character with less than half their Health is considered \textbf{wounded}. Health can be restored by resting (See Recovering Pool values, below), by alchemy and by magic. A character that is dead can not be healed. Reviving magic doesn’t exist in the Ragged Lands.
 
 
-\textbf{Stamina} describes a character’s ability to act out tasks that are bodily challenging. When a character climbs or swims fast, or if a character uses special maneuvers in combat, he loses stamina. Stamina can be restored by resting (See below). It usually doesn’t take much longer than an hour to completely restore Stamina, so outside of a stressful situation, a character usually has full Stamina. If a character reaches a Stamina of 0, he becomes unconscious. A character can force himself to continue even when reaching a Stamina of 0 by making a Vitality check with an initial DV of 10. For every round this goes on, however, the character loses 1D6 health, and has to repeat the check, with the DV increasing by 1 every round.
+\textbf{Stamina} describes a character’s ability to act out tasks that are bodily challenging. When a character climbs or swims fast, or if a character uses special maneuvers in combat, he loses stamina. Stamina can be restored by resting (See below). It usually doesn’t take much longer than an hour to completely restore Stamina, so outside of a stressful situation, a character usually has full Stamina. A character with less than half of their Stamina becomes \textbf{exhausted}. If a character reaches a Stamina of 0, they become \textbf{unconscious}.
 
 
-\textbf{Mana} is usually tracked for every character, but only important for magic users. It describes a character’s ability to cast spells. Casting a spell costs Mana, and a character replenishes mana by eating. A character that reaches 0 Mana becomes paralyzed.
-
-
-\subsection{Relevant Attributes}
-
-The 3 Pool Values are based on different attributes. Health is based on Vitality, Stamina is based on Strength and Mana is based on Intellect. Whenever these attributes change, the Pool values change accordingly. For example. a character may have 9 Intelligence. Therefore, this character starts playing with 9 Mana plus the value of their initial D6 roll (let's say 4, making it a total of 13), assuming the player didn’t invest in the second “Increase Mana” Perk. If the player now increases the IN value by 1, the character now has 10 IN, which increases the character’s Mana automatically to 14.
-
-If the character now gains the “Increase Mana II” perk and rolls a 4, they gain 14 Mana and are at a total of 28.
-
-Now, the character may be hit by an Intelligence-draining attack, bringing their IN down to 8 (A reduction of 2 points). Since their IN was assigned 2 times to their Mana (Once for each level of "Increase Mana"), their Mana is reduced by 4, to a total of 24.
-
-
-This mechanic is the same for all 3 Pool Values and their corresponding attributes.
+\textbf{Mana} is usually tracked for every character, but only important for magic users. It describes a character’s ability to cast spells. Casting a spell costs Mana, and a character replenishes mana by eating. A character with less than half their Mana is considered \textbf{drained}. A character that reaches 0 Mana becomes \textbf{paralyzed}.
 
 
 \subsection{Recovering Pool Values}
@@ -78,18 +84,15 @@ For each of the 3 different Pool values, recovery works the same way, but is tri
 
 \subsection{Health}
 
-Aside from using special tools or magic for healing, each character has the ability to recover health in a natural way. A character's natural healing ability allows them to heal 1 points of health, per 1 hour.
-A priest or healer may improve someone's natural healing ability.
+Aside from using special tools or magic for healing, each character has the ability to recover health in a natural way. A character's natural healing ability allows them to heal 1 points of health, per 1 hour. While resting, this healing effect is doubled.
+A priest or healer may further improve someone's natural healing ability.
 
 
 \subsection{Stamina}
 
-Stamina can be recovered by taking a break, regaining breath, not moving too much around, sitting down for a minute or two or drinking a bit of water. For every 3 seconds a character rests like that (or every AP in combat), they gain back 1 Stamina.
-
+Stamina can be recovered by taking a break, regaining breath, not moving too much around, sitting down for a minute or two or drinking a bit of water. For every 3 seconds a character rests like that (or every AP in combat they spend just resting), they gain back 1 Stamina.
 
 
 \subsection{Mana}
 
-Mana can be recovered by eating. Every time a character eats a full meal's worth of food, they regain 1d6 points of Mana. In the equipment section, there is an item called "Ration per day" - this is the equivalent of 3 meals.
-
-Better foods may add bonuses to this die roll.
+Mana is recovered over time, but the rate at which it recovers can be influenced by the food that the caracter eats. A meal usually lasts for 8 hours. A usual ration provides a recovery of 1d6 points per hour.
