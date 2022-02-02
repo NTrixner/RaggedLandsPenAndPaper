@@ -1,11 +1,10 @@
 
-\chapter{Combat TODO REWORK}
+\chapter{Combat}
 Whenever a combat situation erupts, the GM starts the battle by deciding if one or multiple participants are surprised. These combat participants are not allowed to act until the others have acted. Then, the GM lets the characters act in a specific order that he decides is the most fitting.
 
-Every action in combat takes a specific amount of Action Points. Action Points are a measure of time, with one Minute consisting of about 100 Action Points. After an action was resolved, the acting character has to wait for the amount of Action points his action took before being able to act again. If no participant is acting, the GM counts down Action Points until a participant is again able to act.
+Every action in combat takes a specific amount of Action Points. Action Points are a measure of time, with one Minute consisting of about 30 Action Points. After an action was resolved, the acting character has to wait for the amount of Action points his action took before being able to act again. If no participant is acting, the GM counts down Action Points until a participant is again able to act.
 
 As an alternative approach, an experienced GM may decide to not use AP at all. This can make the game more flowing and immersive, but it may prove to be difficult to balance.
-
 
 
 \section{Actions in combat}
@@ -23,37 +22,29 @@ For example, a character with 7 Agility may run 14 Passus, paying 7 Stamina in t
 
 In order to attack an opponent, the character has to be in reach of said opponent. This reach is defined by the character’s weapon. He then has to make an attack roll:
 
-Attack roll = 1D12 + STR/DEX/AG + Combat Level + [XD4] + misc
+Attack roll = 1D20 + STR/DEX/AG + [Combat Level + XD4] + misc
 
-The D4s can only be added if the character is trained to a certain amount in the attack they are making.
+The D4s and level can only be added if the character is trained to a certain amount in the attack they are making.
 
-If the attacker has an attack roll that is higher than the defender's Reaction Value, the defender can not react to the attack. This is also the case if the defender is unaware of the attacker. Otherwise, the defender can react in one of three ways: Dodge, Block or take the hit. All of these actions - except taking the hit - require a successful check and a specific amount of Stamina.
-The defender's Reaction Value is equal to:
+If the attacker has an attack roll that is higher than the defender's Dodge, the defender can not react to the attack. This is also the case if the defender is unaware of the attacker. Otherwise, the defender can react in one of three ways: Dodge, Block or take the hit. All of these actions - except taking the hit - require a successful check and a specific amount of Stamina.
 
-RV = 7 + PE + Combat Level + [X*2] + misc
+The amount of stamina used for a defensive action is based on the amount of  AP that the attack costs. 
 
-The 2s can only be added if the character is trained to a certain amount in the Armor Training perk of the armor they are wearing.
-
-The amount of stamina used for a defensive action is based on the amount of damage dice that the attacker would get, including additional dice from different sources. For example, slashing with an arming sword deals damage die. Dodging costs 2 Stamina per damage die, therefore it costs 2 Stamina to dodge a slash from an arming sword.
-
-The DV for the defensive check is the attack roll. The defensive action may prevent any damage from happening. Otherwise, the attacker rolls damage according to his weapon. The defensive action and the defender's armor may reduce that damage, and the rest is dealt to the defender’s health. Also, there is a chance to wound the opponent. By default, it's assumed an attack is aimed at the torso of the defender. The attacker can choose to target a different body part by invoking a malus (See wounds below). If the damage dealt is larger than the wound threshold that the defender's armor at that body part provides, a wound of the weapon's damage type is caused. If the weapon deals multiple types of damage, each type of damage is treated differently for wounding. Therefore each type of damage has to beat the threshold, but multiple types of damage may cause multiple wounds with one attack. See below for different wound types and their effects. 
-
+The DV for the defensive check is the attack roll. The defensive action may prevent any damage from happening. Otherwise, the attacker rolls damage according to his weapon. The defensive action and the defender's armor may reduce that damage, and the rest is dealt to the defender’s health. If the attack deals multiple types of damage, each type of damage is treated separately. 
 
 \textbf{Fumbles and Critical hits}
 
-When you roll a Natural 12 on a Weapon attack roll, you automatically hit as if the defender would take the “Take Hit” action and deal additional damage. This means that any weapon damage die is rolled twice, taking the total result when determining the damage of the attack.
+When you roll a Natural 20 on a Weapon attack roll, you automatically hit as if the defender would take the “Take Hit” action and deal additional damage. This means that any weapon damage die is rolled twice, taking the total result when determining the damage of the attack.
 
 This is called a “critical hit”, and some enemies are immune to it or have a chance to resist a critical hit.
 
 When you roll a Natural 1 on a Weapon attack, you automatically miss your attack.
 
 
-
 \item Trip [AP depending on weapon; 5 Stamina]
 
-Make a melee attack roll against a standing opponent, taking additional 5 Stamina. Your attack roll is contested by the enemy's dodge roll. This dodge roll does not cost any Stamina. For every foot (or other type of grounding appendage) the enemy has, they gain +1 on their roll. When your enemy fails, they drop prone.\\
-Unlike a normal attack, a trip does not deal damage. Also, the enemy can react regardless of their Reaction Value.\\
-
+Make a melee attack roll against a standing opponent, using an additional 5 Stamina. Your attack roll is contested by the enemy's Evade Action. This Evade action does not cost any Stamina. For every foot (or other type of grounding appendage) the enemy has, they gain +1 on their roll. When your enemy fails, they drop prone.\\
+Unlike a normal attack, a trip does not deal damage.\\
 
 
 \item Disarm [AP depending on weapon; 5 Stamina]
@@ -61,13 +52,12 @@ Unlike a normal attack, a trip does not deal damage. Also, the enemy can react r
 You attack one opponent that is armed with a manufactured weapon. Make a melee weapon attack roll, taking an additional 5 Stamina, opposed by the enemy's weapon attack roll. If you succeed, the enemy drops their weapon to the floor. You don't deal damage with this attack.\\
 
 
-\item Dodge [Defensive; 2 Stamina per attacking Damage Die]
+\item Evade [Defensive; 2 Stamina per attack AP]
 
-Dodging requires an Agility check against the attack roll. If the defender succeeds this check, they move one passus to a free spot and take no damage. If there is no free spot, or the defender’s roll failed, they take normal damage instead. Dodging can be used against melee and ranged attacks.
+Evading requires an Agility check against the attack roll. If the defender succeeds this check, they move one passus to a free spot and take no damage. If there is no free spot, or the defender’s roll failed, they take normal damage instead. Evading can be used against melee and ranged attacks.
 
 
-
-\item Block [Defensive; 1 Stamina per attacking Damage Die]
+\item Block [Defensive; 1 Stamina per attack AP]
 
 Blocking requires a Weapon defense roll against the attacker's attack roll. If the defender succeeds this check, they roll a weapon defense damage roll and add the result to their armor rating before reducing the attacker’s damage by the total. (When wielding two weapons or a weapon and a shield, the defender may choose one of the two). Blocking can be used against melee and ranged attacks, but ranged attacks can only be blocked by shields.
 
@@ -78,16 +68,14 @@ Blocking requires a Weapon defense roll against the attacker's attack roll. If t
 Taking the hit is the default defensive action, therefore it doesn’t cost anything. The attacker automatically hits, and the weapon damage is reduced by the defender’s Armor Rating. Taking the hit can be used against melee and ranged attacks.
 
 
+\item Counter [Defensive; 2 Stamina per counter attack AP]
 
-\item Counter [Defensive; 3 Stamina per own Damage Die]
-
-When a defensive action (except taking the hit) reduces a melee attack's damage to 0, the defender can use the opportunity given by the botched attack to counter it with their own attack. Doing so is quite strenuous, requiring 3 Stamina Points per damage die of the counter-attack.
-
+When a defensive action (except taking the hit) reduces a melee attack's damage to 0, the defender can use the opportunity given by the botched attack to counter it with their own attack. Doing so is quite strenuous, requiring 2 Stamina Points per AP cost of the counter attack.
 
 
 \item Fight defensively [1 AP]
 
-A character can decide to fight defensively for the duration of one Action Point. If they do so, they gain +4 on defensive rolls and +2 on their Reaction Value for that duration. A character may declare to fight defensively for a specific amount of time, or until a certain condition is met. In the latter case, they act again on the AP count after that condition triggers.
+A character can decide to fight defensively for the duration of one Action Point. If they do so, they gain +4 on defensive rolls and +2 on Dodge for that duration. A character may declare to fight defensively for a specific amount of time, or until a certain condition is met. In the latter case, they act again on the AP count after that condition triggers.
 
 
 \subsection{Movement Actions}
@@ -103,29 +91,9 @@ In order to move in a strategic manner, the character has to pay 1 AP per passus
 In order to run to a specific position, the character loses 1 stamina per 2 passus. If two characters try to run to the same spot at the same time, an Agility-check decides who arrives first. If one of them is further away from their goal, this contestant gains a malus of 1 for every passus of difference.
 
 
-
-\item Move safely [2 AP per 1 passus]
-
-In order to move to a specific position without taking damage from wounds, the character uses two AP per 1 passus moved.
-
-
 \item Draw/Sheathe Weapon  [AP cost depends]
 
 When not armed, a character first has to draw their weapon. Also, if they want to change weapons, they usually have to either drop the weapon they're wearing (which doesn't cost any AP) or sheathe it, before drawing a different weapon. The AP to do so is specified by the weapon.
 
 
 \end{itemize}
-
-\section{Wounds}
-Every character has a wound threshold, which is equals to their Vitality + their combat level + a bonus provided by armor and other sources. Whenever an attack deals more damage than the target's wound threshold, a wound is caused. It is applied to the body part that was attacked. By default, this is the torso. A wounded character has specific penalties according to the table below. Each body part can have a specific amount of wounds. The effects of wounds are cumulative. If a body part becomes fully wounded, it becomes crippled.
-A character heals one wound per day, and can choose which one to heal.
-
-
-\rowcolors{2}{lightgray}{white}
-\begin{tabular}{p{1cm} | c | c | p{4cm} | p{4cm}}
-Body Part & Wounds & Atk. Mod. & Wound effect & Crippled effect \\ \hline
-Torso & 5 & 0 & 1 damage per AP spent on performing actions & Max/Current Health halved\\
-Legs & 4 & -4 & -2 on Dodge rolls, -2 on Agility & One leg becomes unusable, Agility becomes permanently halved \\
-Arms & 3 & -8 & -2 on Attack and Block rolls, -1 Strength, -1 Dexterity & Lose one Arm, halves Dexterity and Strength\\
-Head & 2 & -12 & 25\% chance of any action failing & Death\\
-\end{tabular}
