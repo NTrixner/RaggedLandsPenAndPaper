@@ -5,6 +5,8 @@
 \usepackage[table]{xcolor}
 \usepackage{makecell, multicol, wrapfig, longtable}
 \usepackage{hyperref}
+\usepackage{pgf}
+\usepackage{siunitx}
 \hypersetup{
 	colorlinks,
 	citecolor=black,
@@ -15,6 +17,28 @@
 
 \setcounter{secnumdepth}{0}
 \setcounter{tocdepth}{0}
+
+\newcommand{\passus} [1] {%
+  \SI{#1}ps (\pgfmathparse{1.5*#1}\pgfmathprintnumber[precision=2]\pgfmathresult~m, \pgfmathparse{5*#1}\pgfmathprintnumber[precision=2]\pgfmathresult~ft)%
+}
+
+\newcommand{\leg} [1] {%
+  \SI{#1}leg (\pgfmathparse{1.2*#1}\pgfmathprintnumber[precision=2]\pgfmathresult~km, \pgfmathparse{0.746*#1}\pgfmathprintnumber[precision=2]\pgfmathresult~mi)%
+}
+
+\newcommand{\fin} [1] {%
+  \SI{#1}fin (\pgfmathparse{1.5*#1}\pgfmathprintnumber[precision=2]\pgfmathresult~cm, \pgfmathparse{0.6*#1}\pgfmathprintnumber[precision=2]\pgfmathresult~")%
+}
+
+\newcommand{\pugnus} [1] {%
+  \SI{#1}pugnus (\pgfmathparse{0.33*#1}\pgfmathprintnumber[precision=2]\pgfmathresult~kg, \pgfmathparse{10*#1}\pgfmathprintnumber[precision=2]\pgfmathresult~fl oz)%
+}
+
+\newcommand{\stone} [1] {%
+  \SI{#1}stone (\pgfmathparse{6*#1}\pgfmathprintnumber[precision=2]\pgfmathresult~kg, \pgfmathparse{13*#1}\pgfmathprintnumber[precision=2]\pgfmathresult~lb)%
+}
+
+
 
 \begin{document}
 	\title{Ragged Lands Pen and Paper System}
@@ -28,6 +52,7 @@
 %	\input{./introduction/pandp.tex}
 %	\input{./introduction/setting.tex}
 %\newpage
+
 
 \part{Basic Rules}
 	\input{./basicRules/baseMechanic.tex}
