@@ -1,6 +1,7 @@
-\documentclass{report}
-\textwidth=15cm
-\oddsidemargin=1cm
+\documentclass[a4paper]{book}
+%\textwidth=15cm
+%\oddsidemargin=0.5cm
+\usepackage[margin=3cm]{geometry}
 \usepackage[toc,page]{appendix}
 \usepackage[table]{xcolor}
 \usepackage{makecell, multicol, wrapfig, longtable}
@@ -54,16 +55,14 @@
 %\newpage
 
 
+\twocolumn
 \part{Basic Rules}
 	\input{./basicRules/baseMechanic.tex}
-\newpage
-
 \part{Playing the Game}
 	\input{./game/structure.tex}
 	\input{./game/adventuring.tex}
 	\input{./game/combat.tex}
 	\input{./game/social.tex}
-\newpage
 
 \part{Character Creation}
 	\input{./charCreation/process.tex}
@@ -71,23 +70,20 @@
 	\input{./perks/backgrounds.tex}
 	\input{./perks/zodiacs.tex}
 %	\input{./charCreation/startEquipment.tex}
-\newpage
 
-
+\onecolumn
 \part{Items and Equipment}
 	\input{./items/armorWeapons.tex}
 	\input{./items/itemsAndGoods.tex}
-\newpage
 
 \part{Perks}
 	\input{./perks/description.tex}
 	\input{./perks/basePerks.tex}
-	\input{./perks/fighting.tex}
+	\input{./perks/martial.tex}
 	\input{./perks/balanceOdem.tex}
 	\input{./perks/magic.tex}
 	\input{./perks/divine.tex}
 	\input{./perks/skills.tex}
-\newpage
 
 %\part{Crafting}
 %	\input{./crafting/overview.tex}
@@ -124,7 +120,6 @@
 	\input{./appendices/damage}
 	\input{./appendices/conditions}
 %	\input{./appendices/biomes}
-\newpage
 
 \end{appendices}
 \end{document}
