@@ -17,10 +17,6 @@ An Armor with this attribute grants damage resistance to Electrical damage by th
 \subsection{Living}\label{armor:living}
 An Armor with this attribute grants damage resistance to Necrotic damage by the amount specified.
 
-\subsection{Isolating}\label{armor:isolating}
-An Armor with this attribute helps against temperature.
-It grants resistance to heat and cold by the value specified.
-
 \subsection{Flammable}\label{armor:flammable}
 An Armor with this attribute easily catches fire.
 Whenever a character wearing it would take heat damage, the armor starts to burn.\\
@@ -53,20 +49,9 @@ An Armor with this attribute grants damage resistance to elemental damage by the
 \subsection{Indestructible}\label{armor:indestructible}
 An Armor with this attribute grants damage resistance to Corrosion and Nihilation damage by the amount specified.
 
-\subsection{Under}\label{armor:under}
-An Armor with this attribute can be worn under any piece of armor that has the "Over" or "Flexible" attribute.\\
-When both armors grant resistances to a damage type, do not add them together.
-Instead, the larger respective resistance count.\\
-Wearing two pieces of armor reduces a character's Agility by 2, to a minimum of 1.
-
-\subsection{Over}\label{armor:over}
-An Armor with this attribute can be worn over any piece of armor that has the "Under" or "Flexible" attribute.\\
-When both armors grant resistances to a damage type, do not add them together.
-Instead, the larger respective resistance count.\\
-Wearing two pieces of armor reduces a character's Agility by 2, to a minimum of 1.
-
-\subsection{Flexible}\label{armor:flexible}
-An Armor with the "Flexible" attribute can be worn over any piece of armor that has the "Under" attribute, or under any piece of armor that has the "Over" attribute. It can not be worn with another piece of armor that has the "Flexible" attribute.\\
+\subsection{Over and Under}\label{armor:under}
+An armor with the "under" attribute can be worn under any "over" armor.\\
+An armor with the "over" attribute can be worn over any "under" armor.\\
 When both armors grant resistances to a damage type, do not add them together.
 Instead, the larger respective resistance count.\\
 Wearing two pieces of armor reduces a character's Agility by 2, to a minimum of 1.
