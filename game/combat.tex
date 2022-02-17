@@ -16,8 +16,8 @@ This can make the game more flowing and immersive, but it may prove to be diffic
 \section{Actions in combat}
 
 \subsection{Combining Actions}
-Broadly speaking, actions are divided into two categories - movement actions and static actions.
-Whenever a character acts, they can spend up to as many passus in movement actions as they have Agility, in addition to making one static action.
+Broadly speaking, actions are divided into two categories -- movement actions and static actions.
+Whenever a character acts, they can spend up to as many AP in movement actions as they have Agility, in addition to making one static action.
 After doing so, they cannot act until as many AP have passed as the sum of actions they took cost.
 
 For example, a character with 7 Agility may dash \passus{14}, paying 7 Stamina in the process, and then do an attack that costs 4 AP.
@@ -32,7 +32,7 @@ In order to attack an opponent, the character has to be in reach of said opponen
 This reach is defined by the character's weapon.
 He then has to make an attack roll:\\
 \\
-Attack roll = 1D20 + STR/DEX/AG + [Combat Level + XD4] + misc
+Attack roll = 1D20 + STR/DEX/AG (depending on the weapon) + [Combat Level + XD4] + misc
 \\
 The D4s and level can only be added if the character is trained to a certain amount in the attack they are making.
 If the attacker has an attack roll that is lower than the defender's Dodge, the attack misses.
@@ -54,7 +54,7 @@ This is called a "critical hit", and some enemies are immune to it or have a cha
 When you roll a Natural 1 on a Weapon attack, you automatically miss your attack.
 
 
-\item Trip [AP depending on weapon; 5 Stamina]
+\item Trip [AP depending on weapon; 10 Stamina]
 Make a melee attack roll against a standing opponent, using an additional 5 Stamina.
 Your attack roll is contested by the enemy's Evade or Block Action.
 This defensive action does not cost any Stamina.
@@ -63,7 +63,7 @@ When your enemy fails, they drop prone.\\
 Unlike a normal attack, a trip does not deal damage.\\
 
 
-\item Disarm [AP depending on weapon; 5 Stamina]
+\item Disarm [AP depending on weapon; 10 Stamina]
 You attack one opponent that is armed with a manufactured weapon.
 Make a melee weapon attack roll, taking an additional 5 Stamina, opposed by the enemy's weapon attack roll.
 If you succeed, the enemy drops their weapon to the floor.
@@ -72,8 +72,8 @@ You don't deal damage with this attack.\\
 
 \item Counter [2 Stamina per counter attack AP]
 
-When a defensive action (except taking the hit) reduces a melee attack's damage to 0, the defender can use the opportunity given by the botched attack to counter it with their own attack.
-Doing so is quite strenuous, requiring 2 Stamina Points per AP cost of the counter-attack.
+When a defensive action (except taking the hit) reduces a melee attack's damage to 0, or if an attacker rolls a natural 1 on a melee attack, the defender can use the opportunity given by the botched attack to counter it with their own attack.
+Doing so is quite strenuous, requiring 3 Stamina Points per AP cost of the counter-attack.
 
 
 \item Fight defensively [1 AP]
@@ -87,14 +87,14 @@ In the latter case, they act again on the AP count after that condition triggers
 \subsubsection{Defensive}
 
 
-\item Evade [Defensive; 2 Stamina per attack AP]
+\item Evade [Defensive; 3 Stamina per attack AP]
 
 Evading requires an Agility check against the attack roll.
-If the defender succeeds this check, they move one passus to a free spot and take no damage.
+If the defender succeeds this check, they move \passus{1} to a free spot and take no damage.
 If there is no free spot, or the defender"'s roll failed, they take normal damage instead.
 Evading can be used against melee and ranged attacks.
 
-\item Block [Defensive; 1 Stamina per attack AP]
+\item Block [Defensive; 2 Stamina per attack AP]
 
 Blocking requires a Weapon defense roll against the attacker's attack roll.
 If the defender succeeds this check, they roll a weapon defense damage roll and add the result to their armor rating before reducing the attacker's damage by the total.
@@ -110,14 +110,14 @@ Taking the hit can be used against melee and ranged attacks.
 
 \subsection{Movement Actions}
 
-\item Move [1 AP per \passus{2}]
+\item Move [1 AP per \passus{1}]
 
 In order to move in a strategic manner, the character has to pay 1 AP per \passus{2} moved.
 
 
-\item Run [1 AP and 1 Stamina per \passus{4}]
+\item Run [1 AP and 2 Stamina per \passus{2}]
 
-In order to run to a specific position, the character loses 1 stamina per \passus{4}.
+In order to run to a specific position, the character loses 2 stamina per \passus{4}.
 If two characters try to run to the same spot at the same time, an Agility-check decides who arrives first.
 If one of them is further away from their goal, this contestant gains a malus of 1 for every passus of difference.
 
