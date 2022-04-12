@@ -1,4 +1,6 @@
 \chapter{The Base mechanic}\label{ch:baseMechanic}
+
+
 \section{The Meta Mechanic}\label{sec:metaMechanic}
 At the beginning of a scene, the GM describes the scene, as well as any points of interest.
 The Players then decide what their player characters want to do.
@@ -14,6 +16,7 @@ If an action can not fail, there is no need to make a roll.\\
 If an action is both possible to fail as well as possible to succeed, a character must make an appropriate check.
 Most of these checks are Attribute Checks, as described in the next section.\\
 
+
 \section{Attribute Checks}\label{sec:attributeChecks}
 Every check is solved by a roll of a D20 You add a specific modifier to your roll, and maybe get additional bonuses if you're trained in that specific task.
 Whenever you roll a check, you compare the outcome of your roll to a Difficulty Value (DV).
@@ -26,7 +29,6 @@ Sometimes, two people compete in a task.
 In order to get the outcome, both people roll a D20 and add their relative modifiers, and optional additional dice.
 The one with the higher result wins the contest.
 If both rolls are the same, they are rolled again until they are not the same anymore.
-
 
 \subsection{Helping Others and working together}\label{subsec:helping}
 Sometimes, a character may be able to help another character with a difficult task.
@@ -58,9 +60,11 @@ A character who once failed to pick a lock may have learned something new about 
 A character who wasn't able to lift up a rock may have trained for some weeks and have gotten stronger.
 A character who wasn't able to climb the wall last night when it rained, may be able to do it in daylight, when the wall is dry.
 
+
 \section{Rounding}\label{sec:rounding}
 Since this System is written for experienced Tabletop-RPG players, there are a lot of formulas and straightforward calculations.
 Even though it's noted everywhere, as a general rule, every time a division happens and the result would be a fraction when an integer is needed, you should round up.
+
 
 \section{Passage of Time}\label{sec:passageOfTime}
 Actions usually take at least some time.
@@ -74,6 +78,7 @@ All the while, combat will only take a few minutes, maybe even just seconds.
 Action Points are a special unit used within the rest of the document.
 Action Points (\textbf{AP}) are used to measure time in action-heavy scenes.
 An Action Point equals to around 2 seconds.
+
 
 \section{Attributes}\label{sec:stats}
 There are seven main attributes in the RLP:\\
@@ -110,6 +115,7 @@ It's important for most social encounters, and determines how easy it is for a c
 Each of these attributes are described as a value of 1--12, with 4--7 being average values.
 A character with a 2 in Empathy may not even be able to articulate a thought, while a character with an 11 in Empathy is able to persuade even kings.
 
+
 \section{Defensive Attributes}\label{sec:defensiveStats}
 These values are derived from the main Attributes and describe defensive values that are used when a character would be target of some effect.\\
 
@@ -117,25 +123,34 @@ These values are derived from the main Attributes and describe defensive values 
 \textbf{Dodge}\label{stat:dodge} is a character's ability to dodge an incoming attack.
 If an attack is below this value, it automatically misses.
 If it is above the target's Dodge value, the defender might still be able to perform defensive actions.\\
-It is equal to 10 + AGI + Level (if proficient)\\
+It is equal to 10 + AGI\\
 
 
 \textbf{Notice}\label{stat:notice} is a character's ability to notice something unseen, like a noise, slight draft, or sneaking enemy.
 It does not automatically unveil anything, but a hidden object not reaching a character's notice value will at least give them the idea that something is off.\\
-It is equal to 10 + PER + Level (if proficient)\\
+It is equal to 10 + PER\\
 
 
 \textbf{Willpower}\label{stat:willpower} is a character's ability to withstand emotional manipulation, as well as enchantment.
 If a character is target to emotional manipulation or a spell or magical effect they don't want to be affected by, and the roll associated with the effect does not reach their Willpower value, the resist the effect outright and don't have to roll competing checks.\\
-It is equal to 10 + EMP + Level (if proficient)\\
+It is equal to 10 + EMP\\
 
 
 \section{Pool Values}\label{sec:pools}
 For RLP, two main pool values are important, with a third being tracked, but really being just important for magically trained characters.
-The base number of these values is determined by a character's race.\\
+The base number of these values is determined by a character's race and attributes.\\
 
+\subsection{Relevant Attributes}\label{subsec:relevantAttributesPools}
+The three Pool Values are each dependant on an Attribute.
+Health depends on Vitality, Stamina depends on Strength, and Mana depends on Intellect.
+This means that each of the Pool Values is equal to a number stemming from a race, plus the relevant attribute.
+For example, a Daevana starts with 25 Health.
+With 9 Vitality, a Daevana would start the game with 34 Health.
+If that character then increases their Vitylity by 1, their maximum Health would also increase.
+Additionally, with each rank in ~\nameref{perk:increasehealth}, Vitality is added to the character's maximum health again.
+This also means that a character with 3 ranks in Increase Health would gain 4 additional maximum Health if they increase their Vitality by 1.
 
-\textbf{Health}\label{pool:health} describes a character's ability to withstand any type of damage.
+\subsection{Health}\label{pool:health} describes a character's ability to withstand any type of damage.
 Health can be seen as a combination of resilience, bodily health and luck.
 If a character reaches 0 Health, he is \textbf{dead}.
 A character with less than one fourth of their Health becomes "\nameref{condition:wounded}".
@@ -144,28 +159,24 @@ Health can be restored by resting (See Recovering Pool values, below), by alchem
 A character that is dead can not be healed.
 Reviving magic doesn't exist in the Ragged Lands.\\
 
-
-\textbf{Stamina}\label{pool:stamina} describes a character's ability to act out tasks that are bodily challenging.
+\subsection{Stamina}\label{pool:stamina} describes a character's ability to act out tasks that are bodily challenging.
 When a character climbs or swims fast, or if a character uses special maneuvers in combat, he loses stamina.
 Stamina can be restored by resting (See below).
 It usually doesn't take much longer than an hour to completely restore Stamina, so outside of a stressful situation, a character usually has full Stamina.
 A character with less than one fourth of their Stamina becomes "\nameref{condition:exhausted}".
-A character with less than one tenth of their Stamina becomes "\nameref{condition:heavilyExhausted}".
+A character with less than one tenth of their Stamina becomes "\nameref{condition:heavilyExhausted}".k
 If a character reaches a Stamina of 0, they become \textbf{unconscious}.\\
 
-
-\textbf{Mana}\label{pool:mana} is usually tracked for every character, but only important for magic users.
+\subsection{Mana}\label{pool:mana} is usually tracked for every character, but only important for magic users.
 It describes a character's ability to cast spells.
 Casting a spell costs Mana, and a character replenishes mana by eating.
 A character with less than one fourth of their Mana becomes "\nameref{condition:drained}".
 A character with less than one tenth of their Mana becomes "\nameref{condition:heavilyDrained}".
 A character that reaches 0 Mana becomes \textbf{paralyzed}.\\
 
-
 \subsection{Recovering Pool Values}\label{subsec:recoveringPoolValues}
 For each of the 3 different Pool values, recovery works the same way, but is triggered by different conditions.
 Whenever one of these conditions occur, the characters regain points in that pool value as mentioned below
-
 
 \subsection{Recovering Health}\label{subsec:recoverHealth}
 Aside from using special tools or magic for healing, each character has the ability to recover health in a natural way.
@@ -173,11 +184,9 @@ A character's natural healing ability allows them to heal 1 points of health, pe
 While resting, this healing effect is doubled.
 A priest or healer may further improve someone's natural healing ability.
 
-
 \subsection{Recovering Stamina}\label{subsec:recoverStamina}
 Stamina can be recovered by taking a break, regaining breath, not moving too much around, sitting down for a minute or two or drinking a bit of water.
 For every 2 seconds a character rests like that (or every AP in combat they spend just resting), they gain back 1 Stamina.
-
 
 \subsection{Recovering Mana}\label{subsec:recoverMana}
 Mana is recovered over time, but the rate at which it recovers can be influenced by the food that the character eats.

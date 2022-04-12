@@ -43,7 +43,9 @@ The amount of stamina used for a defensive action is based on the amount of  AP 
 The DV for the defensive check is the attack roll.
 The defensive action may prevent any damage from happening.
 Otherwise, the attacker rolls damage according to his weapon.
-The defensive action and the defender's armor may reduce that damage, and the rest is dealt to the defender's health.
+The weapon entry states what attribute is added to the damage roll, and how much of it is added.
+When calculating this value, remember to round up.
+The defensive action and the defender's armor may reduce the resulting damage, and the rest is dealt to the defender's health.
 If the attack deals multiple types of damage, each type of damage is treated separately.
 
 
@@ -99,7 +101,7 @@ Evading can be used against melee and ranged attacks.
 Blocking requires a Weapon defense roll against the attacker's attack roll.
 If the defender succeeds this check, they roll a weapon defense damage roll and add the result to their armor rating before reducing the attacker's damage by the total.
 (When wielding two weapons or a weapon and a shield, the defender may choose one of the two).
-Blocking can be used against melee and ranged attacks, but ranged attacks can only be blocked by shields.
+Blocking can only be used against melee attacks unless otherwise stated by the blocking weapon.
 
 \item Take Hit [Defensive; 0 Stamina]
 
