@@ -83,34 +83,34 @@ An Action Point equals to around 2 seconds.
 \section{Attributes}\label{sec:stats}
 There are seven main attributes in the RLP:\\
 
-\textbf{Strength (STR)}\label{stat:strength} describes a character's muscle strength.
+\textbf{Strength (ST)}\label{stat:strength} describes a character's muscle strength.
 It's an important ability for melee combat, and determines carrying capacity.\\
 
 
-\textbf{Vitality (VIT)}\label{stat:vitality} is a character's bodily defensive ability.
+\textbf{Vitality (VI)}\label{stat:vitality} is a character's bodily defensive ability.
 It determines how a character is able to withstand extreme weather conditions, sickness or poison.\\
 
 
-\textbf{Dexterity (DEX)}\label{stat:dexterity} describes a character's hand-eye-coordination.
+\textbf{Dexterity (DE)}\label{stat:dexterity} describes a character's hand-eye-coordination.
 It's important with fine tasks like crafting or disabling traps, picking pockets and locks or tying knots.
 It also helps with ranged or melee combat, depending on the attacker's weapon.\\
 
 
-\textbf{Agility (AGI)}\label{stat:agility} is a character's ability to act when necessary, and also describes how a character is able to move around.
+\textbf{Agility (AG)}\label{stat:agility} is a character's ability to act when necessary, and also describes how a character is able to move around.
 It's important for climbing, swimming, running, sneaking, gymnastics and tumbling in general.\\
 
 
-\textbf{Intellect (INT)}\label{stat:intellect} describes a character's overall rational ability, his memory and his ability to acquire knowledge.
+\textbf{Intellect (IN)}\label{stat:intellect} describes a character's overall rational ability, his memory and his ability to acquire knowledge.
 It can also be used to describe a character's overall knowledge about a specific topic or lore.
 It's also important for magic users.\\
 
 
-\textbf{Perception (PER)}\label{stat:perception} is a character's ability to realize his surroundings.
+\textbf{Perception (PE)}\label{stat:perception} is a character's ability to realize his surroundings.
 It's important for battle, but also necessary to survive while exploring dangerous environments.
 It's also important for social encounters.\\
 
 
-\textbf{Empathy (EMP)}\label{stat:empathy} describes a character's ability to understand others.
+\textbf{Empathy (EM)}\label{stat:empathy} describes a character's ability to understand others.
 It's important for most social encounters, and determines how easy it is for a character to haggle prices, to talk himself out of a battle or seduce a barmaid.\\
 Each of these attributes are described as a value of 1--12, with 4--7 being average values.
 A character with a 2 in Empathy may not even be able to articulate a thought, while a character with an 11 in Empathy is able to persuade even kings.
@@ -123,17 +123,17 @@ These values are derived from the main Attributes and describe defensive values 
 \textbf{Dodge}\label{stat:dodge} is a character's ability to dodge an incoming attack.
 If an attack is below this value, it automatically misses.
 If it is above the target's Dodge value, the defender might still be able to perform defensive actions.\\
-It is equal to 10 + AGI\\
+It is equal to 10 + AG\\
 
 
 \textbf{Notice}\label{stat:notice} is a character's ability to notice something unseen, like a noise, slight draft, or sneaking enemy.
 It does not automatically unveil anything, but a hidden object not reaching a character's notice value will at least give them the idea that something is off.\\
-It is equal to 10 + PER\\
+It is equal to 10 + PE\\
 
 
 \textbf{Willpower}\label{stat:willpower} is a character's ability to withstand emotional manipulation, as well as enchantment.
 If a character is target to emotional manipulation or a spell or magical effect they don't want to be affected by, and the roll associated with the effect does not reach their Willpower value, the resist the effect outright and don't have to roll competing checks.\\
-It is equal to 10 + EMP\\
+It is equal to 10 + EM\\
 
 
 \section{Pool Values}\label{sec:pools}
@@ -141,12 +141,12 @@ For RLP, two main pool values are important, with a third being tracked, but rea
 The base number of these values is determined by a character's race and attributes.\\
 
 \subsection{Relevant Attributes}\label{subsec:relevantAttributesPools}
-The three Pool Values are each dependant on an Attribute.
+The three Pool Values are each dependent on an Attribute.
 Health depends on Vitality, Stamina depends on Strength, and Mana depends on Intellect.
 This means that each of the Pool Values is equal to a number stemming from a race, plus the relevant attribute.
 For example, a Daevana starts with 25 Health.
 With 9 Vitality, a Daevana would start the game with 34 Health.
-If that character then increases their Vitylity by 1, their maximum Health would also increase.
+If that character then increases their Vitality by 1, their maximum Health would also increase.
 Additionally, with each rank in ~\nameref{perk:increasehealth}, Vitality is added to the character's maximum health again.
 This also means that a character with 3 ranks in Increase Health would gain 4 additional maximum Health if they increase their Vitality by 1.
 
