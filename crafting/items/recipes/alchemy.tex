@@ -1,0 +1,26 @@
+\section{Alchemical Recipes}\label{sec:alchemicalRecipes}
+Alchemical recipes are organised by levels.
+Potions are crafted in batches.
+You can create up to 5 potions in one batch, and crafting one batch takes one hour.
+The potions in a batch all have to be of the same kind.
+Crafting potions requires a mortar and pestle.
+Each potion requires one set of ingredients and a solvent.
+Also, it is necessary to use a vial to create a potion.
+If the solvent is already in a vial, no additional vial is necessary.
+Each 1-hour batch is created by rolling the check only once. 
+The first bonus is applied when the Difficulty Value of that recipe is beaten by 5, and the second bonus is applied when the Difficulty Value is beaten by 10. 
+If the check is failed by 5 or more, the creation fails and all the ingredients are lost.
+Otherwise, the creation fails and 1 hour passes, but the creator keeps the ingredients.
+Creating a potion requires some way of heating it.\\
+
+
+\subsection{Level 1 Potions}
+\rowcolors{2}{lightgray}{white}
+\begin{longtable}{l | p{2.5cm} | l | l | p{1.5cm} | p{1.5cm} | p{1cm} }
+	Potion & Ingredients & Solvent & DV & 1st Bonus & 2nd Bonus & Recipe Price (In Gold)\\ \hline
+	Antidote & 1x Poison Essence I, 1x Health Essence I & Alcohol & 14 & +5 instead & +6 instead & 50\\
+	Health Potion & 1x Health Essence I & Water & 12 & +1 health & +2 health & 50\\
+	Mana Potion & 1x Magic Essence I & Alcohol & 12 & +1 Mana & +2 Mana & 50\\
+	Stamina Potion & 1x Speed Essence I & Fat & 12 & +1 stamina & +2 Stamina & 30\\
+	Spider Venom & 1x Spider Venom Sack & Alcohol & 14 & DV 13 instead & DV 14 instead & 30\\
+\end{longtable}

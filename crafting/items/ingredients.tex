@@ -1,119 +1,134 @@
-\section{Ingredients}
-These are items that can be found and harvested in order to create items. They are ordered by type.\\
+\section{Ingredients}\label{sec:ingredients}
+These are items that can be found and harvested in order to create items.
+They are ordered by type.\\
 \\
-\subsection{Containers}
+
+\subsection{Alchemical solvents}\label{subsec:solvents}
 \rowcolors{2}{lightgray}{white}
-\begin{longtable}{l | r | r}
-	Name & Weight & Price (In Gold)\\ \hline
-	Bottle & 0.25/- & 5\\
-	Vial & 0.05/- & 10\\
-	Empty Spell Scroll & 0.01 & 10\\
+\begin{longtable}{l | r | l}
+	Name & Price (In Gold) & Effect\\ \hline
+	Alcohol, cheap & 5 & Crafting Check -4\\
+	Alcohol, mediocre & 10 & Crafting Check -2\\
+	Alcohol, normal & 20 & Nothing\\
+	Alcohol, fine & 50 & Crafting Check +2\\
+	Alcohol, exquisite & 100 & Crafting Check +4\\
+	Oil, cheap & 3 & Crafting Check -4\\
+	Oil, mediocre & 7 & Crafting Check -2\\
+	Oil, normal & 15 & Nothing\\
+	Oil, fine & 40 & Crafting Check +2\\
+	Oil, exquisite & 80 & Crafting Check +4\\
+	Water, stale & - & Crafting Check -2\\
+	Water, drinkable & -/1 & Nothing\\
+	Water, spring & 5 & Crafting Check +2\\
+	Water, distilled & 20 & Crafting Check +4\\
 \end{longtable}
 
-
-\subsection{Alchemical solvents}
-\rowcolors{2}{lightgray}{white}
-\begin{longtable}{l | r | r | l}
-	Name & Weight & Price & Effect\\ \hline
-	Alcohol, cheap & 0.25 & 5 & Crafting Check -4\\
-	Alcohol, mediocre & 0.25 & 10 & Crafting Check -2\\
-	Alcohol, normal & 0.25 & 20 & Nothing\\
-	Alcohol, fine & 0.25 & 50 & Crafting Check +2\\
-	Alcohol, exquisite & 0.25 & 100 & Crafting Check +4\\
-	Oil, cheap & 0.25 & 3 & Crafting Check -4\\
-	Oil, mediocre & 0.25 & 7 & Crafting Check -2\\
-	Oil, normal & 0.25 & 15 & Nothing\\
-	Oil, fine & 0.25 & 40 & Crafting Check +2\\
-	Oil, exquisite & 0.25 & 80 & Crafting Check +4\\
-	Water, stale & 0.25 & - & Crafting Check -2\\
-	Water, drinkable & 0.25 & -/1 & Nothing\\
-	Water, spring & 0.25 & 5 & Crafting Check +2\\
-	Water, distilled & 0.25 & 20 & Crafting Check +4\\
-\end{longtable}
-
-
-Prices for alcohol, oil and water don't include prices for bottles. They are considered to be enough for one bottle, which equals 5 vials. One vial full of alcohol, oil or water is needed for alchemical recipes. \\
+Prices for alcohol, oil and water don't include prices for bottles.
+They are considered to be enough for one bottle, which equals 5 vials.
+One vial full of alcohol, oil or water is needed for alchemical recipes. \\
 
 The price for drinkable water depends on the area - buying the water from a tavern or a well-owner costs 1 gold per bottle, but otherwise it might be considered free.\\
 
-An empty spell scroll comes with enough magic ink to scribe a spell on it.\\
 
-
-\subsection{Soul Shards}
+\subsection{Soul Shards}\label{subsec:soulShards}
 \rowcolors{2}{lightgray}{white}
 \begin{longtable}{l | r | r}
-	Size & Weight & Price\\ \hline
-	Tiny & 0.01 & 50\\
-	Small & 0.05 & 250\\
-	Normal & 0.1 & 1000\\
-	Large & 0.2 & 5000\\
-	Massive & 0.5 & 10 000\\
-	Huge & 1 & 50 000\\
-	Radiant & 0.25 & 100 000\\
+	Shard & Size & Price (In Gold)\\ \hline
+	Tiny & CS & 50\\
+	Small & CS & 250\\
+	Normal & T & 1,000\\
+	Large & T & 5,000\\
+	Massive & T & 10,000\\
+	Huge & S & 50,000\\
+	Radiant & T & 100,000\\
 \end{longtable}
 
 
-\subsection{Alchemical Ingredients}
-Alchemical Ingredients contain certain essences. If a recipe requires a specific essence, any item that contains that essence can be used for that potion. Some potions may require different ingredients with the same essence, or very specific items. \\
+\subsection{Alchemical Ingredients}\label{subsec:alchemicalIngredients}
+Alchemical Ingredients contain certain essences.
+If a recipe requires a specific essence, any item that contains that essence can be used for that potion.
+Some potions may require different ingredients with the same essence, or very specific items. \\
 
+\rowcolors{2}{lightgray}{white}
+\begin{longtable}{l | r | r}
+	Name & Size & Price (In Gold)\\ \hline
+	Health Essence I & T & 20\\
+	Body Essence I & T & 20\\
+	Poison Essence I & T & 15\\
+	Magic Essence I & T & 25\\
+	Ice Essence I & T & 30\\
+	Speed Essence I & T & 35\\
+	Fire Essence I & T & 30\\
+\end{longtable}
 
-\subsection{Cooking ingredients}
-This is a list of ingredients that can be used in recipes. If a recipe calls for a specific type of ingredient, any ingredient with that type can be used. The effect of that item are then applied to the resulting meals. 
+\subsection{Cooking ingredients}\label{subsec:cookingIngredients}
+This is a list of ingredients that can be used in recipes.
+If a recipe calls for a specific type of ingredient, any ingredient with that type can be used.
+The effect of that item are then applied to the resulting meals.
 \rowcolors{2}{lightgray}{white}
 \begin{longtable}{l | r | r | l | p{3cm} }
-	Name & Weight & Price & Type & Effect\\ \hline
-	Bread, stale & 0.01 & 1 & Carbohydrate & None\\
-	Bread, normal & 0.01 & 2 & Carbohydrate & +1 Mana\\
-	Bread, good & 0.01 & 3 & Carbohydrate & +2 Mana\\
-	Salt, sea or rock & - & 2 & Season & None\\
-	Salt, high quality & - & 5 & Season & +1d4 Motivation\\
-	Cheese, cheap & 0.01 & 1 & Side & None\\
-	Cheese, fresh & 0.01 & 2 & Side & +5 temp Stamina\\
-	Cheese, hard & 0.01 & 3 & Side & +10 temp Stamina\\
-	Cheese, high quality & 0.01 & 10 & Side & +20 temp Stamina\\
-	Meat, beef & 0.01 & 5 & Protein & +1d4 Motivation\\
-	Meat, pork & 0.01 & 3 & Protein & None \\
-	Meat, wolf & 0.01 & 8 & Protein & +1d8 temp Health\\
-	Meat, giant spider & 0.01 & 10 & Protein & Meal lasts +2 weeks\\ 
+	Name & Size & Price (In Gold) & Type & Effect\\ \hline
+	Bread, stale & T & 1 & Carbohydrate & None\\
+	Bread, normal & T & 2 & Carbohydrate & +1 Mana\\
+	Bread, good & T & 3 & Carbohydrate & +2 Mana\\
+	Salt, sea or rock & CS & 2 & Season & None\\
+	Salt, high quality & CS & 5 & Season & +1d4 Motivation\\
+	Cheese, cheap & T & 1 & Side & None\\
+	Cheese, fresh & T & 2 & Side & +5 temp Stamina\\
+	Cheese, hard & T & 3 & Side & +10 temp Stamina\\
+	Cheese, high quality & T & 10 & Side & +20 temp Stamina\\
+	Meat, beef & T & 5 & Protein & +1d4 Motivation\\
+	Meat, pork & T & 3 & Protein & None \\
+	Meat, wolf & T & 8 & Protein & +1d8 temp Health\\
+	Meat, giant spider & T & 10 & Protein & Meal lasts +2 weeks\\
 \end{longtable}
 
-Whenever a meal effect would result in temporary Stamina, Health or Mana, or give motivation dice, this effect lasts for 8 hours, or until the next meal is consumed. After that, the effect ends. Temporary Health and Mana are consumed first, temporary Stamina is consumed last. Neither can be replenished after being used.
-Motivation dice can be added on any attribute check, including attack and defense rolls. The character using the motivation can decide if and how many motivation dice are spent on one check before making the roll. The dice are spent afterwards and cannot be used again.\\
+Whenever a meal effect would result in temporary Stamina, Health or Mana, or give motivation dice, this effect lasts for 8 hours, or until the next meal is consumed.
+After that, the effect ends.
+Temporary Health and Mana are consumed first, temporary Stamina is consumed last.
+Neither can be replenished after being used.
+Motivation dice can be added on any attribute check, including attack and defense rolls.
+The character using the motivation can decide if and how many motivation dice are spent on one check before making the roll.
+The dice are spent afterwards and cannot be used again.\\
 
-\subsection{Scraps}
+\subsection{Scraps}\label{subsec:scraps}
 These resources can be collected from monsters or the environment.
 \rowcolors{2}{lightgray}{white}
 \begin{longtable}{l | r | r }
-	Name & Weight & Price\\ \hline
-	Wolf Fur Scraps & 0.05 & 2\\
-	Leather Scraps & 0.05 & 1\\
-	Bronze Scraps & 0.05 & 3\\
-	Iron Scraps & 0.05 & 4\\
-	Copper Scraps & 0.05 & 1\\
-	Tin Scraps & 0.05 & 2\\
-	Cloth Scraps & 0.05 & -\\ 
+	Name & Size & Price\\ \hline
+	Wolf Fur Scraps & T & 2\\
+	Leather Scraps & T & 1\\
+	Bronze Scraps & T & 3\\
+	Iron Scraps & T & 4\\
+	Copper Scraps & T & 1\\
+	Tin Scraps & T & 2\\
+	Cloth Scraps & T & -\\
 \end{longtable}
 
-\subsection{Resources}
-These resources can be bought orcrafted from scaps and other resources.
+\subsection{Resources}\label{subsec:resources}
+These resources can be bought or crafted from scraps and other resources.
 \begin{longtable}{l | r | r }
-	Name & Weight & Price\\ \hline
-	Leather & 0.2 & 20\\
-	Leather Fittings & 0.1 & 10\\
-	Cloth & 0.1 & 5\\
-	Yarn & 0.01 & 10\\
-	Wolf Fur & 0.1 & 100\\
-	Metal Fittings & 0.1 & 50\\
-	Nail & 0.01 & 5\\
+	Name & Size & Price\\ \hline
+	Feathers, 20 & T & 5\\
+	Leather & S & 20\\
+	Leather Fittings & S & 10\\
+	Innards & T & 5\\
+	Cloth & S & 5\\
+	Yarn & T & 10\\
+	Wolf Fur & S & 100\\
+	Metal Fittings & S & 50\\
+	Nail & T & 5\\
 \end{longtable}
 
-\subsection{Ingots}
-These metal ingots can be used for weapons, armor and other items. Whenever such a recipe allows for multiple ingots, they have to be of the same type. The effects listed are applied to any weapon, armor or other item crafted with this metal, respectively if the recipe itself calls for "metal ingot".
+\subsection{Ingots}\label{subsec:ingots}
+These metal ingots can be used for weapons, armor and other items.
+Whenever such a recipe allows for multiple ingots, they have to be of the same type.
+The effects listed are applied to any weapon, armor or other item crafted with this metal, respectively if the recipe itself calls for "metal ingot".
 \begin{longtable}{l | r | r | p{2cm} | p{2cm} | p{2cm}}
-	Name & Weight & Price & Armor & Weapon & Other\\ \hline
-	Bronze Ingot & 0.05 & 30 & +1 Wnd Thr & -1 Dmg & -10\% val\\
-	Iron Ingot & 0.05 & 60 & - & - & -\\
-	Steel Ingot & 0.05 & 100 & +1 Cutting, +1 Piercing & Crit Range +1 & +30\% val\\
-	Mithril  Ingot & 0.05 & 500 & +1 Cutting, +1 Piercing, +2 max agility & +2 damage per die & value doubled, weight halved\\ 
+	Name & Weight & Price (In Gold) & Armor & Weapon & Other\\ \hline
+	Bronze Ingot & T & 30 & - & -1 Quality & -\\
+	Iron Ingot & T & 60 & - & - & -\\
+	Steel Ingot & T & 100 & +1 Cutting, +1 Piercing Res & Crit Range +1 & +30\% val\\
+	Mithril  Ingot & T (but weighs like CS) & 500 & +1 Cutting, +1 Piercing, +2 max agility & +2 damage per die & value doubled, weight halved\\
 \end{longtable}
 
