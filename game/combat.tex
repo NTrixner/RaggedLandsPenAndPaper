@@ -17,11 +17,9 @@ This can make the game more flowing and immersive, but it may prove to be diffic
 
 \subsection{Combining Actions}
 Broadly speaking, actions are divided into two categories -- movement actions and static actions.
-Whenever a character acts, they can spend up to as many AP in movement actions as they have Agility, in addition to making one static action.
-After doing so, they cannot act until as many AP have passed as the sum of actions they took cost.
-
-For example, a character with 7 Agility may dash \passus{14}, paying 7 Stamina in the process, and then do an attack that costs 4 AP.
-Afterwards, they can not act again for 8 AP.
+Whenever a character acts, they can combine movement and static actions to a maximum total AP equal to or below their Agility plus their Combat level.
+As part of a static action, a character can spend half of that static action's AP for movement without paying additional AP, as long as it makes sense to do so - for example, a character might be able to move a few steps as part of an attack, but it wouldn't make sense to move while picking a lock.
+After acting, a character cannot act until as many AP have passed as the sum of actions they took has cost.
 
 \subsection{Static Actions}
 
@@ -93,7 +91,7 @@ In the latter case, they act again on the AP count after that condition triggers
 
 Evading requires an Agility check against the attack roll.
 If the defender succeeds this check, they move \passus{1} to a free spot and take no damage.
-If there is no free spot, or the defender"'s roll failed, they take normal damage instead.
+If there is no free spot, or the defender's roll failed, they take normal damage instead.
 Evading can be used against melee and ranged attacks.
 
 \item Block [Defensive; 2 Stamina per attack AP]
@@ -112,14 +110,14 @@ Taking the hit can be used against melee and ranged attacks.
 
 \subsection{Movement Actions}
 
-\item Move [1 AP per \passus{1}]
+\item Walk [1 AP per \passus{1}]
 
-In order to move in a strategic manner, the character has to pay 1 AP per \passus{2} moved.
+In order to move in a strategic manner, the character has to pay 1 AP per \passus{1} moved.
 
 
 \item Run [1 AP and 2 Stamina per \passus{2}]
 
-In order to run to a specific position, the character loses 2 stamina per \passus{4}.
+In order to run to a specific position, the character loses 2 stamina per \passus{2}.
 If two characters try to run to the same spot at the same time, an Agility-check decides who arrives first.
 If one of them is further away from their goal, this contestant gains a malus of 1 for every passus of difference.
 
