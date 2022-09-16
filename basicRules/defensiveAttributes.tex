@@ -1,0 +1,28 @@
+\section{Defensive Attributes}\label{sec:defensiveStats}
+These values are derived from the main Attributes and describe defensive values that are used when a character would be target of some effect.\\
+Each and every one of these Attributes consists of three values: The bonus, the lower attribute and the higher attribute.\\
+The Lower Attribute is equal to 8 + the Bonus.\\
+The Higher Attribute is equal to 21 + the Bonus.\\
+A Check with a Defensive Attribute is equal to 1d20 + the Bonus.\\
+When resolving an effect that requires a roll against a defensive attribute, the effect fails if the roll lower than the lower attribute, succeeds if it's higher than the higher attribute, and allows the creature to act defensively (by making a roll with the bonus) if it is between.
+If the effect doesn't require a roll by whoever is causing it, but has a fixed Difficulty Value, the target can always make a check against it (but it doesn't really need to if the Difficulty Value is higher than the Higher Value, since that would require a die roll higher than a 20).\\
+
+For example, if a creature attacks another creature, the attacker makes an attack roll against the Dodge of the defender.
+If the attack roll is below the defender's Lower Dodge, the attack automatically misses.
+If it's above the defender's Higher Dodge, it automatically hits.
+If it's in between those two values (including the values themselves), the defender can try to use a Dodge action (see combat section) to make a contested roll against the attack roll, using their Dodge Bonus.\\
+
+By default, each Defensive Attribute is equal to one Main Attribute.
+However, characters can learn Perks that increase their bonuses or gain temporary bonuses from magic items, spells or potions, or other sources.\\
+
+
+\textbf{Dodge}\label{stat:dodge} is a character's ability to dodge an incoming attack.\\
+The bonus for this attribute is based on Agility.\\
+
+\textbf{Notice}\label{stat:notice} is a character's ability to notice something unseen, like a noise, slight draft, or sneaking enemy.
+It does not automatically unveil anything, but a hidden object not reaching a character's notice value will at least give them the idea that something is off.\\
+The bonus for this attribute is based on Perception.\\
+
+\textbf{Willpower}\label{stat:willpower} is a character's ability to withstand emotional manipulation, as well as enchantment.
+If a character is target to emotional manipulation or a spell or magical effect they don't want to be affected by, and the roll associated with the effect does not reach their Willpower value, the resist the effect outright and don't have to roll competing checks.\\
+The bonus for this attribute is based on Empathy.\\
