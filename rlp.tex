@@ -1,10 +1,11 @@
 \documentclass[a4paper]{book}
-%\textwidth=15cm
-%\oddsidemargin=0.5cm
+\textwidth=15cm
+\oddsidemargin=0.5cm
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{1pt}
 \usepackage[margin=3cm]{geometry}
 \usepackage[toc,page]{appendix}
+\usepackage[toc]{multitoc}
 \usepackage[table]{xcolor}
 \usepackage{makecell, multicol, wrapfig, longtable}
 \usepackage{hyperref}
@@ -21,7 +22,8 @@
 }
 
 \setcounter{secnumdepth}{0}
-\setcounter{tocdepth}{0}
+\setcounter{tocdepth}{1}
+\renewcommand*{\multicolumntoc}{2}
 
 \newcommand{\passus} [1] {%
   \SI{#1}ps (\pgfmathparse{1.5*#1}\pgfmathprintnumber[precision=2]\pgfmathresult~m, \pgfmathparse{5*#1}\pgfmathprintnumber[precision=2]\pgfmathresult~ft)%
@@ -73,7 +75,6 @@
 	\input{./charCreation/backgrounds.tex}
 	\input{./charCreation/cultures.tex}
 	\input{./charCreation/zodiacs.tex}
-%	\input{./charCreation/startEquipment.tex}
 
 \part{Items and Equipment}\label{part:itemsEquipment}
 	\input{./items/armorWeapons.tex}
