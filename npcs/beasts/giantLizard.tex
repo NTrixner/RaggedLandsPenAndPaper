@@ -1,5 +1,12 @@
-\section{Skeleton}
-Tier 1 Fighter, 1 Slot, Medium Undead, Humanoid, No Soul\\
+\section{Giant Lizard}
+Tier 1 Fighter, 1 Slot, Medium Beast, Tiny Soul
+
+These four-legged animals are the size of a larger pony or a small horse, but only stand hip-height.
+Their spit is pseudo-venomous, with a toxin-like effect caused by highly aggressive bacteria that they use to digest food rapidly.
+They breed by laying their eggs into sand pits that they dig themselves.
+Some cultures have learned to tame monitor lizards, teaching them to guard areas and hunt prey.
+This is very dangerous however, since the reptiles are relatively stupid and have low vision.
+They often mistake their owners for prey, food or a threat, lashing out at them.
 
 \subsection{Levels}
 \begin{minipage}[H]{1\textwidth}
@@ -9,7 +16,7 @@ Tier 1 Fighter, 1 Slot, Medium Undead, Humanoid, No Soul\\
         \hline
         Combat & Adventuring & Social\\
         \hline
-        2 & 1 & 1\\
+        2 & 1 & 0\\
         \hline
     \end{tabular}
 \end{minipage}
@@ -22,10 +29,11 @@ Tier 1 Fighter, 1 Slot, Medium Undead, Humanoid, No Soul\\
         \hline
         Strength & Vitality & Dexterity & Agility & Intellect & Perception & Empathy\\
         \hline
-        11 & 7 & 5 & 5 & 4 & 8 & 4\\
+        7 & 7 & 4 & 4 & 2 & 3 & 2\\
         \hline
     \end{tabular}
 \end{minipage}
+\bigbreak
 
 \begin{minipage}[H]{1\textwidth}
     \centering
@@ -34,12 +42,13 @@ Tier 1 Fighter, 1 Slot, Medium Undead, Humanoid, No Soul\\
         \hline
         Dodge & Notice & Willpower\\
         \hline
-        15 & 16 & 12\\
+        12 & 11 & 10\\
         \hline
     \end{tabular}
 \end{minipage}
 
 \subsection{Pool Values}
+\bigbreak
 \begin{minipage}[H]{1\textwidth}
     \centering
     \rowcolors{2}{lightgray}{white}
@@ -47,12 +56,12 @@ Tier 1 Fighter, 1 Slot, Medium Undead, Humanoid, No Soul\\
         \hline
         Health & Stamina & Mana\\
         \hline
-        20 + 2d6 + 14 & 15 + 1d6 + 22 & 15 + 4\\
-        41 & 41 & 19\\
+        15 + 2d6 + 7 & 15 + 1d6 + 7 & 5 + 2 \\
+        29 & 26 & 7\\
         \hline
     \end{tabular}
 \end{minipage}
-
+\noindent
 
 \subsection{Resistances}
 \begin{minipage}[H]{1\textwidth}
@@ -62,38 +71,32 @@ Tier 1 Fighter, 1 Slot, Medium Undead, Humanoid, No Soul\\
         \hline
         Type & Resistance && Type & Resistance && Type & Resistance\\
         \hline
-        Cutting & 2 &&
-        Piercing & 6\\
+        Blunt & 1 &&
+        Cutting & 4 &&
+        Piercing & 1\\
+        Heat & 2 &&
+        Cold & 0 &&
+        Electrical & 0\\
+        Corrosion & 0 &&
+        Suffocation & 0 &&
+        Nihilation & 0 \\
+        Necrose & 2 &&
+        Radiation & 0 &&
+        Psychic & 0\\
         \hline
     \end{tabular}
 \end{minipage}
 
 \subsection{Perks}
-Health Pool II\\
-Stamina Pool I\\
-Brutal Attack I\\
-Intimidation I\\
-Simple Weapon Training I\\
-Sword Training I\\
-Shield Training I\\
+Increase Health I\\
+Increase Stamina I\\
+Weapon Training (Bite) II\\
 
 \subsection{Actions}
-Actions:\\
-Arming Sword Slash (4 AP): +11, Crit 19-20 \passus{1}: 3d6 + 4 Cutting\\
-
-Arming Sword Thrust (3 AP): +11, Crit 19-20 \passus{1}: 1d8 + 4 Piercing\\
-
-Arming Sword Block: +11, 1d6 + 4 Cutting Damage\\
-
-Round Shield Bash (3 AP): +11, \passus{1}: 1d6 + 2 Blunt\\
-
-Round Shield Block: +11, 2d4 + 6 Blunt, Cutting, or Piercing Damage\\
-
+Bite (4 AP): +9 + 1d4, \passus{1}: 1d4 + 4 piercing + 2d4 corrosive damage\\
 
 \subsection{Tables}
-Loot:\\
-Check: Perception\\
-Tool: -\\
+Type: Butchering
 \\
 \begin{minipage}{0.8\textwidth}
     \rowcolors{2}{lightgray}{white}
@@ -101,24 +104,9 @@ Tool: -\\
         \hline
         Check & Cost\\
         \hline
-        8 & 1x Rusty Arming Sword (--2), 1x Rusty Shield (--2)\\
-        12 & 1x Rusted Armor (No defense, medium, 1x Iron Material I), 2d6 Gold\\
-        16 & 2d6 Gold\\
-        \hline
-    \end{tabular}
-\end{minipage}
-\\
-Check: Dexterity (Alchemy)\\
-Tool: -\\
-\\
-\begin{minipage}{0.8\textwidth}
-    \rowcolors{2}{lightgray}{white}
-    \begin{tabular}{|l | l|}
-        \hline
-        Check & Cost\\
-        \hline
-        15 & 1x Bone Meal (Tiny, Death Essence I)\\
-        20 & 1d4 Bone Meal (Tiny, Death Essence I)\\
+        15 & 1x Giant Lizard Guts (S, Protein)\\
+        20 & 1d4 Giant Lizard Guts (S, Protein)\\
+        25 & + 1 Giant Lizard Hide, untreated (M, untreated Leather)\\
         \hline
     \end{tabular}
 \end{minipage}
