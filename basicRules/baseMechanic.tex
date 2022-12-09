@@ -72,13 +72,17 @@ In general, a creature only profits the strongest bonus of a given type, and onl
 For example, a creature might gain a +2 Alchemical Strength bonus and a +3 Magical Strength bonus, gaining a total of a +5 to Strength.
 However, if the same creature gains a second Alchemical Strength bonus with +4, the total bonus comes to +7, not +9, since the creature stops profiting from the +2 Alchemical Strength bonus (While still having it - if the +4 bonus ends earlier, the total goes back to +5).
 On the other end of the spectrum, a creature suffering a -5 Magical Strength Malus and a -2 Magical Strength Malus would only suffer a total of -5.
-Additionally, some bonuses and maluses apply dice instead of flat values.
+Additionally, some bonuses and maluses apply dice instead of flat values.\\
 For example, being trained in a skill will provide a +1d4, +2d4 or +3d4 skill bonus.
 In such cases, the largest amounts of the same sized dice (both positive and negative) apply to the checks.
 Additionally, positive and negative dice of equal size cancel each other out (for example, a creature with +1d4 and -1d4 has a bonus of 0).
 For example, a creature might have a +2d4 skill bonus, a +1d4 skill bonus, a +1d4 racial bonus, a +1d6 skill bonus, a +5 skill bonus, a -1d4 profane malus, a -2d4 profane malus, and a -1d6 profane malus on the same roll.
 As a result, that creature would have +3d4 (since the racial and skill 1d4 bonuses stack, but not both skill bonuses), +1d6, +5, -2d4 (again, both profane maluses don't stack), and -1d6 (different dice, therefore they stack).
-The total would be +1d4 + 5, since the +3d4 and -2d4 reduce to 1d4, the two 1d6 cancel each other out, and the +5 is left over.
+The total would be +1d4 + 5, since the +3d4 and -2d4 reduce to 1d4, the two 1d6 cancel each other out, and the +5 is left over.\\
+Lastly, some modifiers are multiplicative.
+Multiple multiplicative modifiers of different types are treated as if they were themselves summations.
+For example, two different x2 modifiers are treated as if each one was a multiplier bonus of +1, therefore resulting in a total of x3.\\
+In general, multipliers are applied first, fractions second, and then dice bonuses/maluses and flat bonuses/maluses.\\
 
 \section{Example DVs}\label{sec:exampleDVs}
 Here is a list of example difficulty values.
