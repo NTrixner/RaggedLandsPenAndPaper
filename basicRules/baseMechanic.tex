@@ -34,8 +34,8 @@ If both rolls are the same, they are rolled again until they are not the same an
 Sometimes, a character may be able to help another character with a difficult task.
 In such a case, the player describes how exactly they are helping, and the GM adjudicates if it's one of three general scenarios.\\
 \textbf{Guided acting} occurs if one character tells another character what to do in order to achieve a task.
-In this case, the acting character may +2 to the roll for every level of Skill Proficiency Perk that the guiding character has for said task.\\
-For example, a character who is trained in picking locks explaining a different character how to pick a certain lock while the second character is actively doing it might give the lock picker +4 bonus if they have 2 levels in the "Lockpicking" perk.\\
+In this case, the acting character may add +2 to the roll for every rank of Skill Proficiency Perk that the guiding character has for said task.\\
+For example, a character who is trained in picking locks explaining a different character how to pick a certain lock while the second character is actively doing it might give the lock picker +4 bonus if they have 2 ranks in the~\nameref{sec:lockPicking} perk.\\
 \textbf{Direct Help} If a character helps another character directly in a certain task, the helping character may have to roll for the specific way in which they are helping.
 If they succeed, the Difficulty Value of the original task is reduced.\\
 For example, if a character is failing their check to climb a cliff, another character who is already at the top might reach down and help them up.
@@ -64,6 +64,25 @@ A character who wasn't able to climb the wall last night when it rained, may be 
 \section{Rounding}\label{sec:rounding}
 Since this System is written for experienced Tabletop-RPG players, there are a lot of formulas and straightforward calculations.
 Even though it's noted everywhere, as a general rule, every time a division happens and the result would be a fraction when an integer is needed, you should round up.
+
+\section{Modifiers Types}\label{sec:modifierTypes}
+When modifiers are applied to bonuses and maluses, they usually have a type associated with them.
+For example, a strength potion might give a character a temporary "alchemical" bonus to strength.
+In general, a creature only profits the strongest bonus of a given type, and only suffers the strongest malus of a given type, but different types of bonuses and maluses are summed up.
+For example, a creature might gain a +2 Alchemical Strength bonus and a +3 Magical Strength bonus, gaining a total of a +5 to Strength.
+However, if the same creature gains a second Alchemical Strength bonus with +4, the total bonus comes to +7, not +9, since the creature stops profiting from the +2 Alchemical Strength bonus (While still having it - if the +4 bonus ends earlier, the total goes back to +5).
+On the other end of the spectrum, a creature suffering a -5 Magical Strength Malus and a -2 Magical Strength Malus would only suffer a total of -5.
+Additionally, some bonuses and maluses apply dice instead of flat values.\\
+For example, being trained in a skill will provide a +1d4, +2d4 or +3d4 skill bonus.
+In such cases, the largest amounts of the same sized dice (both positive and negative) apply to the checks.
+Additionally, positive and negative dice of equal size cancel each other out (for example, a creature with +1d4 and -1d4 has a bonus of 0).
+For example, a creature might have a +2d4 skill bonus, a +1d4 skill bonus, a +1d4 racial bonus, a +1d6 skill bonus, a +5 skill bonus, a -1d4 profane malus, a -2d4 profane malus, and a -1d6 profane malus on the same roll.
+As a result, that creature would have +3d4 (since the racial and skill 1d4 bonuses stack, but not both skill bonuses), +1d6, +5, -2d4 (again, both profane maluses don't stack), and -1d6 (different dice, therefore they stack).
+The total would be +1d4 + 5, since the +3d4 and -2d4 reduce to 1d4, the two 1d6 cancel each other out, and the +5 is left over.\\
+Lastly, some modifiers are multiplicative.
+Multiple multiplicative modifiers of different types are treated as if they were themselves summations.
+For example, two different x2 modifiers are treated as if each one was a multiplier bonus of +1, therefore resulting in a total of x3.\\
+In general, multipliers are applied first, fractions second, and then dice bonuses/maluses and flat bonuses/maluses.\\
 
 \section{Example DVs}\label{sec:exampleDVs}
 Here is a list of example difficulty values.
